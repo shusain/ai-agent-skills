@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "units": "mm",
+  "x": {"west":125,"east":9875,"spine":5000,"services":6350,"dressing":2450},
+  "y": {"front":125,"rear":11875,"study":3825,"service_front":5325,"wc":6825,"service_rear":8475,"primary":6800},
+  "floors": {
+    "ground": {
+      "z_mm": 0,
+      "walls": [
+        ["front","x","front","west","east",250],
+        ["rear","x","rear","west","east",250],
+        ["west","y","west","front","rear",250],
+        ["east","y","east","front","rear",250],
+        ["spine","y","spine","front","rear",150],
+        ["study","x","study","west","spine",150],
+        ["service_front","x","service_front","services","east",150],
+        ["wc","x","wc","services","east",150],
+        ["service_rear","x","service_rear","services","east",150],
+        ["services","y","services","service_front","service_rear",150]
+      ],
+      "openings": [
+        ["entry","front",5500,6500,"door",0,2100],
+        ["garden","rear",8200,9100,"door",0,2100],
+        ["study_door","spine",1300,2200,"door",0,2100],
+        ["living_door","spine",5600,6500,"door",0,2100],
+        ["kitchen_portal","spine",9000,10600,"portal",0,2400],
+        ["wc_door","services",5600,6400,"door",0,2100],
+        ["utility_door","services",7050,7850,"door",0,2100],
+        ["study_window","front",900,3200,"window",900,1200],
+        ["living_window","west",5400,7400,"window",900,1200],
+        ["dining_window","rear",900,3500,"window",900,1200],
+        ["kitchen_rear_window","rear",5700,7300,"window",1100,1000],
+        ["kitchen_side_window","east",9100,10600,"window",1100,1000]
+      ],
+      "labels": [
+        ["study",2600,2850,"Study / guest","4.68 × 3.50 m"],
+        ["living",2600,8200,"Living / dining","4.68 × 7.85 m"],
+        ["kitchen",7300,10300,"Kitchen","4.68 × 3.20 m"],
+        ["wc",8050,6150,"WC",""],
+        ["utility",8050,7800,"Utility",""],
+        ["entry",5950,3750,"Entry",""],
+        ["stair",8400,800,"UP","U-shaped stair"]
+      ]
+    },
+    "upper": {
+      "z_mm": 3000,
+      "walls": [
+        ["front","x","front","west","east",250],
+        ["rear","x","rear","west","east",250],
+        ["west","y","west","front","rear",250],
+        ["east","y","east","front","rear",250],
+        ["spine","y","spine","front","rear",150],
+        ["bedroom2","x","study","west","spine",150],
+        ["service_front","x","service_front","services","east",150],
+        ["bedroom3","x","service_rear","spine","east",150],
+        ["services","y","services","service_front","service_rear",150],
+        ["primary_entry","x","primary","west","spine",150],
+        ["dressing","y","dressing","study","primary",150]
+      ],
+      "openings": [
+        ["bedroom2_door","spine",1300,2200,"door",0,2100],
+        ["primary_door","spine",5600,6500,"door",0,2100],
+        ["bath_door","services",6600,7500,"door",0,2100],
+        ["bedroom3_door","bedroom3",5350,6250,"door",0,2100],
+        ["dressing_door","dressing",5100,6000,"door",0,2100],
+        ["primary_inner_door","primary_entry",3250,4150,"portal",0,2100],
+        ["bedroom2_window","front",900,3200,"window",900,1200],
+        ["landing_window","front",5600,6600,"window",900,1200],
+        ["primary_side_window","west",8200,10000,"window",900,1200],
+        ["primary_rear_window","rear",900,3500,"window",900,1200],
+        ["bedroom3_window","rear",6100,8100,"window",900,1200],
+        ["bath_window","east",6000,7300,"window",1400,700]
+      ],
+      "labels": [
+        ["bedroom2",2600,2800,"Bedroom 2","4.68 × 3.50 m"],
+        ["primary",2600,9100,"Primary bedroom","4.68 × 4.88 m"],
+        ["dressing",1300,5550,"Dressing",""],
+        ["private",3700,4550,"Private entry",""],
+        ["bedroom3",7300,10300,"Bedroom 3","4.68 × 3.20 m"],
+        ["bath",8050,7100,"Bathroom","3.33 × 3.00 m"],
+        ["landing",5900,3750,"Landing",""],
+        ["stair",8400,800,"STAIR","U-shaped stair"]
+      ]
+    }
+  }
+}

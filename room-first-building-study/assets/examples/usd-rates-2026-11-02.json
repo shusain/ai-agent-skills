@@ -1,0 +1,227 @@
+{
+  "currency": "USD",
+  "checked": "2026-11-02",
+  "sources": [
+    [
+      "Timber Titans, Oct20 price list",
+      "https://timbertitans.store/products-%26-prices",
+      "2x4x10 SPF $5.50;2x6x10 SPF $7.93"
+    ],
+    [
+      "Dynamic Lumber: dry framing",
+      "https://dynamiclumbersolutions.com/boise-lumberyard/framing-lumber",
+      "2x4x10 $7.50;2x6x10 $12.05;2x10x10 $19.67"
+    ],
+    [
+      "Dynamic Lumber: OSB",
+      "https://dynamiclumbersolutions.com/boise-lumberyard/osb",
+      "15/32 OSB $16.16;23/32 T&G $23.46;7/8 T&G $35.84 per4x8 sheet"
+    ],
+    [
+      "Menards:2.5x9.5x32ft I-joist",
+      "https://www.menards.com/main/building-materials/trusses-i-joists-engineered-lumber/i-joists-rim-boards/2-1-2-x-9-1-2-i-joist-40-series/1066043/p-1642874354850493-c-5662.htm",
+      "Everyday price $92.76 /32ft; no expired sale or rebate used"
+    ],
+    [
+      "Dynamic Lumber: RFPI400",
+      "https://dynamiclumbersolutions.com/boise-lumberyard/i-joists/9-1-2-inch-rfpi-400-i-joist/",
+      "$4.06/linear foot; comparison product, not an approved substitute"
+    ],
+    [
+      "Gehring concrete2026",
+      "https://www.gehringconcrete.com/Products/Ready-Mix-Products-Pricing",
+      "4000psi sand/gravel $156/yd3; rate excludes added delivery/services"
+    ],
+    [
+      "Natural State concrete",
+      "https://www.naturalstateconcrete.com/Home/PriceList",
+      "4000psi line-pump mix $215/yd3; comparison upper rate, no pumping labor included"
+    ],
+    [
+      "Western States: standing seam",
+      "https://www.westernstatesmetalroofing.com/blog/metal-roof-types",
+      "Standing-seam field panels $3-5/ft2; trim/underlayment additional"
+    ],
+    [
+      "US lumber actual-size guide",
+      "https://images.homedepot.ca/pdf/1000170523_Measurement%20guide-pdf.pdf",
+      "Nominal2x4 is dressed1.5x3.5in; metric study sizes differ"
+    ]
+  ],
+  "items": {
+    "Exterior stud / plate / blocking stock": {
+      "unit_low_usd": 7.93,
+      "unit_high_usd": 12.05,
+      "waste_percent": 15.0,
+      "basis": "US2x6 volume-price comparison; NOT a replacement framing schedule"
+    },
+    "Interior stud / plate / blocking stock": {
+      "unit_low_usd": 5.5,
+      "unit_high_usd": 7.5,
+      "waste_percent": 15.0,
+      "basis": "US2x4 volume-price comparison; NOT a replacement framing schedule"
+    },
+    "Roof rafters / ties / gable framing": {
+      "unit_low_usd": 650,
+      "unit_high_usd": 950,
+      "waste_percent": 15.0,
+      "basis": "Mixed sawn-stock volume allowance, anchored by listed dimensional-lumber prices; long members require redesign/stock selection"
+    },
+    "Roof ridges / valleys / large beams": {
+      "unit_low_usd": 1400,
+      "unit_high_usd": 2400,
+      "waste_percent": 15.0,
+      "basis": "Engineered/heavy-timber volume allowance; no supplier beam schedule"
+    },
+    "Both-floor I-joists": {
+      "unit_low_usd": 2.89875,
+      "unit_high_usd": 4.06,
+      "waste_percent": 10.0,
+      "basis": "Comparable9.5in I-joist listings; counts complete joists once, not upper flange+lower flange+web three times"
+    },
+    "LVL bearers / transfer beams / opening headers": {
+      "unit_low_usd": 1400,
+      "unit_high_usd": 2400,
+      "waste_percent": 15.0,
+      "basis": "Provisional LVL volume allowance; needs exact grade/plies/lengths"
+    },
+    "Rim / stair-opening trimmers": {
+      "unit_low_usd": 750,
+      "unit_high_usd": 1300,
+      "waste_percent": 15.0,
+      "basis": "Sawn/engineered rim-stock allowance"
+    },
+    "Treated sill stock": {
+      "unit_low_usd": 1000,
+      "unit_high_usd": 1600,
+      "waste_percent": 15.0,
+      "basis": "Treated stock allowance"
+    },
+    "Roof and rainscreen battens": {
+      "unit_low_usd": 750,
+      "unit_high_usd": 1300,
+      "waste_percent": 15.0,
+      "basis": "Mixed batten stock allowance"
+    },
+    "Stair timber / treads / guard timber": {
+      "unit_low_usd": 800,
+      "unit_high_usd": 1800,
+      "waste_percent": 0,
+      "basis": "Allowance for6 stringer blanks, landing,16 treads/18 risers, guard timber; modeled notches are not a stock blank volume"
+    },
+    "22mm subfloor": {
+      "unit_low_usd": 35.84,
+      "unit_high_usd": 55,
+      "waste_percent": 10.0,
+      "basis": "4x8 area equivalent; listed7/8,15/32,23/32in OSB proxies; high end is premium/regional allowance"
+    },
+    "12mm wall sheathing": {
+      "unit_low_usd": 16.16,
+      "unit_high_usd": 25,
+      "waste_percent": 15.0,
+      "basis": "4x8 area equivalent; listed7/8,15/32,23/32in OSB proxies; high end is premium/regional allowance"
+    },
+    "18mm roof sheathing": {
+      "unit_low_usd": 23.46,
+      "unit_high_usd": 35,
+      "waste_percent": 15.0,
+      "basis": "4x8 area equivalent; listed7/8,15/32,23/32in OSB proxies; high end is premium/regional allowance"
+    },
+    "Foundation concrete": {
+      "unit_low_usd": 156,
+      "unit_high_usd": 215,
+      "waste_percent": 5.0,
+      "basis": "Union of actual rectangular concrete solids;5% pour allowance; two published ready-mix comparisons"
+    },
+    "Formwork / reinforcing / foundation waterproofing": {
+      "unit_low_usd": 2000,
+      "unit_high_usd": 4000,
+      "waste_percent": 0,
+      "basis": "Not a modeled reinforcement or formwork takeoff; additional material allowance"
+    },
+    "Structural fixings / connectors / adhesives": {
+      "unit_low_usd": 2000,
+      "unit_high_usd": 4000,
+      "waste_percent": 0,
+      "basis": "No complete fastener schedule modeled; excludes roof field-panel fasteners in roof-system allowance"
+    },
+    "Standing-seam field panels": {
+      "unit_low_usd": 3,
+      "unit_high_usd": 5,
+      "waste_percent": 15.0,
+      "basis": "Manufacturer field-panel range;15% cut allowance"
+    },
+    "Roof flashings / gutters / accessories": {
+      "unit_low_usd": 1800,
+      "unit_high_usd": 3500,
+      "waste_percent": 0,
+      "basis": "Additional material allowance; not installation labor"
+    },
+    "Wall and roof weather barriers": {
+      "unit_low_usd": 1200,
+      "unit_high_usd": 2500,
+      "waste_percent": 0,
+      "basis": "Membrane/tape allowance; exact products not specified"
+    },
+    "Exterior cladding": {
+      "unit_low_usd": 2,
+      "unit_high_usd": 4,
+      "waste_percent": 15.0,
+      "basis": "Explicit generic siding material allowance; visual shader does not specify a commercial product"
+    },
+    "Modeled wall-cavity insulation": {
+      "unit_low_usd": 90,
+      "unit_high_usd": 170,
+      "waste_percent": 10.0,
+      "basis": "Explicit fiberglass/mineral-wool budget allowance; no attic/floor insulation inferred from unmodeled geometry"
+    },
+    "15mm wall and ceiling lining": {
+      "unit_low_usd": 16,
+      "unit_high_usd": 24,
+      "waste_percent": 10.0,
+      "basis": "4x8 equivalent;5/8in drywall price allowance, not a selected product"
+    },
+    "Lining tape / compound / consumables": {
+      "unit_low_usd": 600,
+      "unit_high_usd": 1200,
+      "waste_percent": 0,
+      "basis": "Material allowance"
+    },
+    "Wood floor finish": {
+      "unit_low_usd": 4,
+      "unit_high_usd": 8,
+      "waste_percent": 10.0,
+      "basis": "Explicit wood flooring material allowance"
+    },
+    "Tile floor finish": {
+      "unit_low_usd": 2,
+      "unit_high_usd": 5,
+      "waste_percent": 10.0,
+      "basis": "Explicit tile material allowance"
+    },
+    "Windows": {
+      "unit_low_usd": 300,
+      "unit_high_usd": 750,
+      "waste_percent": 0,
+      "basis": "Complete-unit allowance;10 source window openings"
+    },
+    "Interior doors": {
+      "unit_low_usd": 130,
+      "unit_high_usd": 260,
+      "waste_percent": 0,
+      "basis": "Complete-unit allowance;7 source interior door openings"
+    },
+    "Entry door": {
+      "unit_low_usd": 350,
+      "unit_high_usd": 1000,
+      "waste_percent": 0,
+      "basis": "Complete-unit allowance"
+    },
+    "Paint / trim / miscellaneous finish materials": {
+      "unit_low_usd": 1500,
+      "unit_high_usd": 3500,
+      "waste_percent": 0,
+      "basis": "Material allowance; excludes furniture/cabinets/fixtures/appliances"
+    }
+  }
+}

@@ -1,0 +1,2 @@
+# The family-wing recipe verifies the exact bytes of the reviewed source.
+/assets/examples/family-wing.svg -text

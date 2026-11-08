@@ -1,0 +1,257 @@
+{
+  "baseline_sha256": "d29d95f2d785e5236a497704b0b9a15ae33886d497491fdfd14cb4d9ea6bb5ae",
+  "family": "u-shape",
+  "footprint": [
+    [
+      0,
+      0,
+      18000,
+      6000
+    ],
+    [
+      0,
+      6000,
+      6000,
+      14000
+    ],
+    [
+      12000,
+      6000,
+      18000,
+      14000
+    ]
+  ],
+  "id": "u-shape-1",
+  "names": {
+    "hall": "Hall",
+    "room_01": "Living / dining",
+    "room_02": "Kitchen",
+    "room_03": "Bedroom 1",
+    "room_04": "Bedroom 2",
+    "room_05": "Study",
+    "room_06": "Bath / utility"
+  },
+  "openings": [
+    {
+      "height_mm": 2100,
+      "hi": 10600,
+      "host": "edge_663fa45733ff",
+      "id": "door_room_01",
+      "kind": "door",
+      "lo": 9700,
+      "sill_mm": 0,
+      "space": "room_01"
+    },
+    {
+      "height_mm": 2100,
+      "hi": 2175,
+      "host": "edge_95d77d4c5552",
+      "id": "door_room_02",
+      "kind": "door",
+      "lo": 1275,
+      "sill_mm": 0,
+      "space": "room_02"
+    },
+    {
+      "height_mm": 2100,
+      "hi": 5700,
+      "host": "edge_1f7e3a139a3a",
+      "id": "door_room_03",
+      "kind": "door",
+      "lo": 4800,
+      "sill_mm": 0,
+      "space": "room_03"
+    },
+    {
+      "height_mm": 2100,
+      "hi": 11300,
+      "host": "edge_0b020cfd16da",
+      "id": "door_room_04",
+      "kind": "door",
+      "lo": 10400,
+      "sill_mm": 0,
+      "space": "room_04"
+    },
+    {
+      "height_mm": 2100,
+      "hi": 6600,
+      "host": "edge_57f8035e3593",
+      "id": "door_room_05",
+      "kind": "door",
+      "lo": 5700,
+      "sill_mm": 0,
+      "space": "room_05"
+    },
+    {
+      "height_mm": 2100,
+      "hi": 2550,
+      "host": "edge_21c2852a4367",
+      "id": "door_room_06",
+      "kind": "door",
+      "lo": 1650,
+      "sill_mm": 0,
+      "space": "room_06"
+    },
+    {
+      "height_mm": 2100,
+      "hi": 9500,
+      "host": "edge_34a1cf5839f0",
+      "id": "entry_hall",
+      "kind": "entry",
+      "lo": 8500,
+      "sill_mm": 0,
+      "space": "hall"
+    },
+    {
+      "height_mm": 1200,
+      "hi": 10850,
+      "host": "edge_53e85f33c1ed",
+      "id": "window_room_01",
+      "kind": "window",
+      "lo": 9450,
+      "sill_mm": 900,
+      "space": "room_01"
+    },
+    {
+      "height_mm": 1200,
+      "hi": 4750,
+      "host": "edge_51fd4cacd5ac",
+      "id": "window_room_02",
+      "kind": "window",
+      "lo": 3350,
+      "sill_mm": 900,
+      "space": "room_02"
+    },
+    {
+      "height_mm": 1200,
+      "hi": 3850,
+      "host": "edge_4cdfeae3e813",
+      "id": "window_room_03",
+      "kind": "window",
+      "lo": 2450,
+      "sill_mm": 900,
+      "space": "room_03"
+    },
+    {
+      "height_mm": 1200,
+      "hi": 11550,
+      "host": "edge_70ea38e9f723",
+      "id": "window_room_04",
+      "kind": "window",
+      "lo": 10150,
+      "sill_mm": 900,
+      "space": "room_04"
+    },
+    {
+      "height_mm": 1200,
+      "hi": 6275,
+      "host": "edge_846b0ec11cc6",
+      "id": "window_room_05",
+      "kind": "window",
+      "lo": 4875,
+      "sill_mm": 900,
+      "space": "room_05"
+    },
+    {
+      "height_mm": 1200,
+      "hi": 12400,
+      "host": "edge_b922abf28c2e",
+      "id": "window_room_06",
+      "kind": "window",
+      "lo": 11000,
+      "sill_mm": 900,
+      "space": "room_06"
+    }
+  ],
+  "profile": "Garden gallery",
+  "seed": 17,
+  "spaces": {
+    "hall": [
+      [
+        4200,
+        4200,
+        13800,
+        6000
+      ],
+      [
+        4200,
+        6000,
+        6000,
+        14000
+      ],
+      [
+        8100,
+        0,
+        9900,
+        4200
+      ],
+      [
+        12000,
+        6000,
+        13800,
+        14000
+      ]
+    ],
+    "room_01": [
+      [
+        13800,
+        6300,
+        18000,
+        14000
+      ]
+    ],
+    "room_02": [
+      [
+        0,
+        0,
+        8100,
+        3450
+      ]
+    ],
+    "room_03": [
+      [
+        13500,
+        0,
+        18000,
+        4200
+      ],
+      [
+        13800,
+        4200,
+        18000,
+        6300
+      ]
+    ],
+    "room_04": [
+      [
+        0,
+        7700,
+        4200,
+        14000
+      ]
+    ],
+    "room_05": [
+      [
+        0,
+        3450,
+        8100,
+        4200
+      ],
+      [
+        0,
+        4200,
+        4200,
+        7700
+      ]
+    ],
+    "room_06": [
+      [
+        9900,
+        0,
+        13500,
+        4200
+      ]
+    ]
+  },
+  "variant": 1
+}

@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "id": "house.two_storey.three_bedroom.study",
+  "units": "mm",
+  "site": {"plot_mm":[24000,24000],"front":"south","maximum_height_storeys":2},
+  "floor_to_floor_mm":3000,
+  "construction":"timber_frame_concept",
+  "clearance":{"circulation_square_mm":1200,"swing_margin_mm":50},
+  "rooms":{
+    "living":{"floor":"ground","name":"Living","role":"family","area_m2":[18,34],"fit_mm":[3000,3600]},
+    "dining":{"floor":"ground","name":"Dining","role":"family","area_m2":[12,24],"fit_mm":[2800,3000]},
+    "kitchen":{"floor":"ground","name":"Kitchen","role":"family","area_m2":[10,20],"fit_mm":[2800,3000]},
+    "study":{"floor":"ground","name":"Study / guest","role":"private","area_m2":[10,17],"fit_mm":[2200,3000]},
+    "wc":{"floor":"ground","name":"WC","role":"service","area_m2":[3,6.5],"fit_mm":[1500,1700]},
+    "utility":{"floor":"ground","name":"Utility","role":"service","area_m2":[4.5,10],"fit_mm":[1800,2100]},
+    "foyer":{"floor":"ground","name":"Foyer","role":"circulation","area_m2":[5,13],"fit_mm":[1600,1800]},
+    "hall":{"floor":"ground","name":"Hall","role":"circulation","area_m2":[5,22],"fit_mm":[1300,1800]},
+    "primary":{"floor":"upper","name":"Primary suite","role":"private","area_m2":[18,34],"fit_mm":[3200,3600]},
+    "bed2":{"floor":"upper","name":"Bedroom 2","role":"private","area_m2":[11,21],"fit_mm":[2800,3200]},
+    "bed3":{"floor":"upper","name":"Bedroom 3","role":"private","area_m2":[11,21],"fit_mm":[2800,3200]},
+    "bath":{"floor":"upper","name":"Bathroom","role":"service","area_m2":[5.5,10],"fit_mm":[2000,2500]},
+    "landing":{"floor":"upper","name":"Landing","role":"circulation","area_m2":[5,13],"fit_mm":[1600,1800]},
+    "upper_hall":{"floor":"upper","name":"Upper hall","role":"circulation","area_m2":[5,24],"fit_mm":[1300,1800]}
+  },
+  "linen_storage":{"floor":"upper","representation":"room_or_builtin","minimum_shelf_mm":[1200,350],"maximum_room_m2":6.5},
+  "relationships":{
+    "required":[["outside","foyer"],["foyer","study"],["foyer","hall"],["hall","wc"],["hall","utility"],["kitchen","dining"],["landing","upper_hall"]],
+    "family_open_group":["living","dining","kitchen"],
+    "public_family_access_from":["foyer","hall"],
+    "bedroom_access":"from landing/upper hall; never through another bedroom",
+    "bathroom_access":"from upper circulation",
+    "stair":"ground circulation to upper landing; aligned shaft and deliberate approach pads",
+    "wet_stack":"upper bathroom overlaps ground kitchen/utility/WC service footprint",
+    "privacy":"study and bedrooms are destinations, not through routes"
+  },
+  "stair":{"type":"u_return","shaft_mm":[3100,4000],"rises":18,"flight_clear_mm":1200,"going_mm":280,"mid_landing_depth_mm":1250,"approach_square_mm":1200,"reserved_headroom_mm":2200},
+  "scope":"Schematic source-asset study. Furniture/use fits, shared-wall clearances and aligned stair reservation; no engineering or building-code acceptance."
+}

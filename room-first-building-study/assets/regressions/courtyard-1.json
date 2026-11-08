@@ -1,0 +1,333 @@
+{
+  "baseline_sha256": "8f58b6f31f17ec45271db5c331b580412a4d4a59487c650e4ce93e4e06153b8b",
+  "family": "courtyard",
+  "footprint": [
+    [
+      0,
+      0,
+      18000,
+      6000
+    ],
+    [
+      0,
+      6000,
+      6500,
+      11000
+    ],
+    [
+      0,
+      11000,
+      18000,
+      16000
+    ],
+    [
+      11500,
+      6000,
+      18000,
+      11000
+    ]
+  ],
+  "id": "courtyard-1",
+  "names": {
+    "hall": "Hall / gallery",
+    "room_01": "Living / dining",
+    "room_02": "Kitchen",
+    "room_03": "Bedroom 1",
+    "room_04": "Bedroom 2",
+    "room_05": "Study",
+    "room_06": "Bedroom 3",
+    "room_07": "Utility",
+    "room_08": "Bathroom"
+  },
+  "openings": [
+    {
+      "height_mm": 2100,
+      "hi": 2550,
+      "host": "edge_51f2fa69c301",
+      "id": "door_room_01",
+      "kind": "door",
+      "lo": 1650,
+      "sill_mm": 0,
+      "space": "room_01"
+    },
+    {
+      "height_mm": 2100,
+      "hi": 12050,
+      "host": "edge_9d6de6c93586",
+      "id": "door_room_02",
+      "kind": "door",
+      "lo": 11150,
+      "sill_mm": 0,
+      "space": "room_02"
+    },
+    {
+      "height_mm": 2100,
+      "hi": 7750,
+      "host": "edge_25e7346cb655",
+      "id": "door_room_03",
+      "kind": "door",
+      "lo": 6850,
+      "sill_mm": 0,
+      "space": "room_03"
+    },
+    {
+      "height_mm": 2100,
+      "hi": 2250,
+      "host": "edge_697d6c11568c",
+      "id": "door_room_04",
+      "kind": "door",
+      "lo": 1350,
+      "sill_mm": 0,
+      "space": "room_04"
+    },
+    {
+      "height_mm": 2100,
+      "hi": 7400,
+      "host": "edge_14778f0e937d",
+      "id": "door_room_05",
+      "kind": "door",
+      "lo": 6500,
+      "sill_mm": 0,
+      "space": "room_05"
+    },
+    {
+      "height_mm": 2100,
+      "hi": 6550,
+      "host": "edge_3e7dfe273ee0",
+      "id": "door_room_06",
+      "kind": "door",
+      "lo": 5650,
+      "sill_mm": 0,
+      "space": "room_06"
+    },
+    {
+      "height_mm": 2100,
+      "hi": 11650,
+      "host": "edge_240d3b428e5a",
+      "id": "door_room_07",
+      "kind": "door",
+      "lo": 10750,
+      "sill_mm": 0,
+      "space": "room_07"
+    },
+    {
+      "height_mm": 2100,
+      "hi": 10050,
+      "host": "edge_92a872ecd44f",
+      "id": "door_room_08",
+      "kind": "door",
+      "lo": 9150,
+      "sill_mm": 0,
+      "space": "room_08"
+    },
+    {
+      "height_mm": 2100,
+      "hi": 9500,
+      "host": "edge_34a1cf5839f0",
+      "id": "entry_hall",
+      "kind": "entry",
+      "lo": 8500,
+      "sill_mm": 0,
+      "space": "hall"
+    },
+    {
+      "height_mm": 1200,
+      "hi": 4750,
+      "host": "edge_5abbaf9b5c18",
+      "id": "window_room_01",
+      "kind": "window",
+      "lo": 3350,
+      "sill_mm": 900,
+      "space": "room_01"
+    },
+    {
+      "height_mm": 1200,
+      "hi": 14650,
+      "host": "edge_f01b98c79e86",
+      "id": "window_room_02",
+      "kind": "window",
+      "lo": 13250,
+      "sill_mm": 900,
+      "space": "room_02"
+    },
+    {
+      "height_mm": 1200,
+      "hi": 5650,
+      "host": "edge_6ac1a673949a",
+      "id": "window_room_03",
+      "kind": "window",
+      "lo": 4250,
+      "sill_mm": 900,
+      "space": "room_03"
+    },
+    {
+      "height_mm": 1200,
+      "hi": 14650,
+      "host": "edge_3892d5648812",
+      "id": "window_room_04",
+      "kind": "window",
+      "lo": 13250,
+      "sill_mm": 900,
+      "space": "room_04"
+    },
+    {
+      "height_mm": 1200,
+      "hi": 7650,
+      "host": "edge_e60b78a186c7",
+      "id": "window_room_05",
+      "kind": "window",
+      "lo": 6250,
+      "sill_mm": 900,
+      "space": "room_05"
+    },
+    {
+      "height_mm": 1200,
+      "hi": 6500,
+      "host": "edge_4d51eb39fa88",
+      "id": "window_room_06",
+      "kind": "window",
+      "lo": 5100,
+      "sill_mm": 900,
+      "space": "room_06"
+    },
+    {
+      "height_mm": 1200,
+      "hi": 11900,
+      "host": "edge_157da7f30f5d",
+      "id": "window_room_07",
+      "kind": "window",
+      "lo": 10500,
+      "sill_mm": 900,
+      "space": "room_07"
+    },
+    {
+      "height_mm": 1200,
+      "hi": 10300,
+      "host": "edge_fbebf7dbd5e0",
+      "id": "window_room_08",
+      "kind": "window",
+      "lo": 8900,
+      "sill_mm": 900,
+      "space": "room_08"
+    }
+  ],
+  "profile": "Central court",
+  "seed": 17,
+  "spaces": {
+    "hall": [
+      [
+        4700,
+        4200,
+        13300,
+        6000
+      ],
+      [
+        4700,
+        6000,
+        6500,
+        11000
+      ],
+      [
+        4700,
+        11000,
+        13300,
+        12800
+      ],
+      [
+        8100,
+        0,
+        9900,
+        4200
+      ],
+      [
+        11500,
+        6000,
+        13300,
+        11000
+      ]
+    ],
+    "room_01": [
+      [
+        0,
+        0,
+        8100,
+        4200
+      ],
+      [
+        0,
+        4200,
+        4700,
+        4300
+      ]
+    ],
+    "room_02": [
+      [
+        9900,
+        12800,
+        18000,
+        16000
+      ],
+      [
+        13300,
+        11200,
+        18000,
+        12800
+      ]
+    ],
+    "room_03": [
+      [
+        0,
+        12800,
+        9900,
+        16000
+      ]
+    ],
+    "room_04": [
+      [
+        9900,
+        0,
+        18000,
+        3600
+      ]
+    ],
+    "room_05": [
+      [
+        0,
+        4300,
+        4700,
+        9600
+      ]
+    ],
+    "room_06": [
+      [
+        9900,
+        3600,
+        18000,
+        4200
+      ],
+      [
+        13300,
+        4200,
+        18000,
+        8000
+      ]
+    ],
+    "room_07": [
+      [
+        0,
+        9600,
+        4700,
+        12800
+      ]
+    ],
+    "room_08": [
+      [
+        13300,
+        8000,
+        18000,
+        11200
+      ]
+    ]
+  },
+  "variant": 1
+}

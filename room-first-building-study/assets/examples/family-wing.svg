@@ -1,0 +1,526 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28500 15000" width="1600" height="842" data-house-program-schema="1" data-units="mm" data-scheme-id="family-wing">
+  <title>Central stair / open family wing</title>
+  <style>.floor-heading{font-family:Arial,sans-serif;font-size:320px;fill:currentColor}</style>
+  <text x="6950" y="400" text-anchor="middle" class="floor-heading">GROUND · UP</text>
+  <svg viewBox="-700 -1000 13900 14100" width="13900" height="14100" data-units="mm" data-layout-id="family-wing-ground" data-seed="0" data-min-walk-mm="1200" data-swing-margin-mm="50" role="img" data-room-program-schema="1" data-floor="ground" data-floor-z-mm="0" x="0" y="700">
+    <title>room-program — Central stair / open family wing</title>
+    <desc>Connected-space generation study. Finished envelope, shared boundaries and hosted openings. Single-level concept; no stair or structural design.</desc>
+    <style>.plan-wall{fill:currentColor}.plan-space{fill:currentColor;fill-opacity:.025}.plan-hall{fill:currentColor;fill-opacity:.07}.plan-line{fill:none;stroke:currentColor;stroke-width:18}.plan-window{fill:none;stroke:currentColor;stroke-width:28}.plan-label{font-family:Arial,sans-serif;font-size:260px;text-anchor:middle;fill:currentColor}.plan-detail{font-size:230px}.plan-node{fill:none;stroke:currentColor;stroke-width:20}</style>
+    <style>.walk-pad{fill:currentColor;fill-opacity:.04;stroke:currentColor;stroke-width:15;stroke-dasharray:70 60}.door-sweep{fill:currentColor;fill-opacity:.08;stroke:none}</style>
+    <g id="ground__world-mm" transform="translate(0 12000) scale(1 -1)" data-original-id="world-mm">
+      <g id="ground__footprint-source" display="none" data-original-id="footprint-source">
+        <rect x="0" y="0" width="12500" height="8300" />
+        <rect x="0" y="8300" width="4400" height="1700" />
+        <rect x="7500" y="8300" width="5000" height="3700" />
+      </g>
+      <g id="ground__spaces-source" display="none" data-original-id="spaces-source">
+        <g data-space-id="dining" data-name="Dining">
+          <rect x="7500" y="8300" width="5000" height="3700" />
+        </g>
+        <g data-space-id="foyer" data-name="Foyer">
+          <rect x="2600" y="0" width="4900" height="2500" />
+        </g>
+        <g data-space-id="hall" data-name="Hall">
+          <rect x="2600" y="2500" width="1800" height="4000" />
+          <rect x="2600" y="6500" width="4900" height="1800" />
+          <rect x="2600" y="8300" width="1800" height="1700" />
+        </g>
+        <g data-space-id="kitchen" data-name="Kitchen">
+          <rect x="7500" y="4500" width="5000" height="3800" />
+        </g>
+        <g data-space-id="living" data-name="Living">
+          <rect x="7500" y="0" width="5000" height="4500" />
+        </g>
+        <g data-space-id="stair" data-name="Stairs">
+          <rect x="4400" y="2500" width="3100" height="4000" />
+        </g>
+        <g data-space-id="study" data-name="Study / guest">
+          <rect x="0" y="0" width="2600" height="5000" />
+        </g>
+        <g data-space-id="utility" data-name="Utility">
+          <rect x="0" y="7000" width="2600" height="3000" />
+        </g>
+        <g data-space-id="wc" data-name="WC">
+          <rect x="0" y="5000" width="2600" height="2000" />
+        </g>
+      </g>
+      <g id="ground__shared-boundaries" display="none" data-original-id="shared-boundaries">
+        <line id="ground__edge_0c0430935909" x1="7500" y1="4500" x2="12500" y2="4500" data-negative-space="living" data-positive-space="kitchen" data-thickness-mm="150" data-boundary-kind="open" data-original-id="edge_0c0430935909" />
+        <line id="ground__edge_1585a71cbe9a" x1="0" y1="0" x2="0" y2="5000" data-negative-space="outside" data-positive-space="study" data-thickness-mm="250" data-boundary-kind="wall" data-original-id="edge_1585a71cbe9a" />
+        <line id="ground__edge_16bd0cb7e6ef" x1="2600" y1="0" x2="7500" y2="0" data-negative-space="outside" data-positive-space="foyer" data-thickness-mm="250" data-boundary-kind="wall" data-original-id="edge_16bd0cb7e6ef" />
+        <line id="ground__edge_1a85dcaa4928" x1="7500" y1="2500" x2="7500" y2="4500" data-negative-space="stair" data-positive-space="living" data-thickness-mm="150" data-boundary-kind="wall" data-original-id="edge_1a85dcaa4928" />
+        <line id="ground__edge_2a8d29834c54" x1="4400" y1="2500" x2="4400" y2="6500" data-negative-space="hall" data-positive-space="stair" data-thickness-mm="150" data-boundary-kind="wall" data-original-id="edge_2a8d29834c54" />
+        <line id="ground__edge_2b389cea71b0" x1="2600" y1="0" x2="2600" y2="2500" data-negative-space="study" data-positive-space="foyer" data-thickness-mm="150" data-boundary-kind="wall" data-original-id="edge_2b389cea71b0" />
+        <line id="ground__edge_2e7c36d4bc5c" x1="7500" y1="12000" x2="12500" y2="12000" data-negative-space="dining" data-positive-space="outside" data-thickness-mm="250" data-boundary-kind="wall" data-original-id="edge_2e7c36d4bc5c" />
+        <line id="ground__edge_30d701501fde" x1="12500" y1="0" x2="12500" y2="4500" data-negative-space="living" data-positive-space="outside" data-thickness-mm="250" data-boundary-kind="wall" data-original-id="edge_30d701501fde" />
+        <line id="ground__edge_41c15c2de3db" x1="12500" y1="4500" x2="12500" y2="8300" data-negative-space="kitchen" data-positive-space="outside" data-thickness-mm="250" data-boundary-kind="wall" data-original-id="edge_41c15c2de3db" />
+        <line id="ground__edge_455d358f4d8a" x1="0" y1="0" x2="2600" y2="0" data-negative-space="outside" data-positive-space="study" data-thickness-mm="250" data-boundary-kind="wall" data-original-id="edge_455d358f4d8a" />
+        <line id="ground__edge_4f735ab39fc3" x1="2600" y1="5000" x2="2600" y2="7000" data-negative-space="wc" data-positive-space="hall" data-thickness-mm="150" data-boundary-kind="wall" data-original-id="edge_4f735ab39fc3" />
+        <line id="ground__edge_582ed4355fc1" x1="7500" y1="6500" x2="7500" y2="8300" data-negative-space="hall" data-positive-space="kitchen" data-thickness-mm="150" data-boundary-kind="open" data-original-id="edge_582ed4355fc1" />
+        <line id="ground__edge_5d5898aab97d" x1="0" y1="5000" x2="0" y2="7000" data-negative-space="outside" data-positive-space="wc" data-thickness-mm="250" data-boundary-kind="wall" data-original-id="edge_5d5898aab97d" />
+        <line id="ground__edge_5ebae76400b7" x1="7500" y1="0" x2="7500" y2="2500" data-negative-space="foyer" data-positive-space="living" data-thickness-mm="150" data-boundary-kind="open" data-original-id="edge_5ebae76400b7" />
+        <line id="ground__edge_6dbc681ad8a8" x1="0" y1="5000" x2="2600" y2="5000" data-negative-space="study" data-positive-space="wc" data-thickness-mm="150" data-boundary-kind="wall" data-original-id="edge_6dbc681ad8a8" />
+        <line id="ground__edge_836b50b3d5ab" x1="7500" y1="0" x2="12500" y2="0" data-negative-space="outside" data-positive-space="living" data-thickness-mm="250" data-boundary-kind="wall" data-original-id="edge_836b50b3d5ab" />
+        <line id="ground__edge_8445077dc3b7" x1="2600" y1="10000" x2="4400" y2="10000" data-negative-space="hall" data-positive-space="outside" data-thickness-mm="250" data-boundary-kind="wall" data-original-id="edge_8445077dc3b7" />
+        <line id="ground__edge_95b01e2b3dcb" x1="4400" y1="8300" x2="7500" y2="8300" data-negative-space="hall" data-positive-space="outside" data-thickness-mm="250" data-boundary-kind="wall" data-original-id="edge_95b01e2b3dcb" />
+        <line id="ground__edge_9b5e46cc9d0e" x1="7500" y1="4500" x2="7500" y2="6500" data-negative-space="stair" data-positive-space="kitchen" data-thickness-mm="150" data-boundary-kind="wall" data-original-id="edge_9b5e46cc9d0e" />
+        <line id="ground__edge_afb3ae2ea681" x1="12500" y1="8300" x2="12500" y2="12000" data-negative-space="dining" data-positive-space="outside" data-thickness-mm="250" data-boundary-kind="wall" data-original-id="edge_afb3ae2ea681" />
+        <line id="ground__edge_b73574f7cb79" x1="4400" y1="2500" x2="7500" y2="2500" data-negative-space="foyer" data-positive-space="stair" data-thickness-mm="150" data-boundary-kind="open" data-original-id="edge_b73574f7cb79" />
+        <line id="ground__edge_bc25d5cf0e7d" x1="4400" y1="8300" x2="4400" y2="10000" data-negative-space="hall" data-positive-space="outside" data-thickness-mm="250" data-boundary-kind="wall" data-original-id="edge_bc25d5cf0e7d" />
+        <line id="ground__edge_bebecbd82299" x1="2600" y1="7000" x2="2600" y2="10000" data-negative-space="utility" data-positive-space="hall" data-thickness-mm="150" data-boundary-kind="wall" data-original-id="edge_bebecbd82299" />
+        <line id="ground__edge_cbdf0086e359" x1="7500" y1="8300" x2="12500" y2="8300" data-negative-space="kitchen" data-positive-space="dining" data-thickness-mm="150" data-boundary-kind="open" data-original-id="edge_cbdf0086e359" />
+        <line id="ground__edge_cce5befa2aad" x1="4400" y1="6500" x2="7500" y2="6500" data-negative-space="stair" data-positive-space="hall" data-thickness-mm="150" data-boundary-kind="wall" data-original-id="edge_cce5befa2aad" />
+        <line id="ground__edge_da642ad08cb5" x1="0" y1="10000" x2="2600" y2="10000" data-negative-space="utility" data-positive-space="outside" data-thickness-mm="250" data-boundary-kind="wall" data-original-id="edge_da642ad08cb5" />
+        <line id="ground__edge_dee8601a68db" x1="0" y1="7000" x2="2600" y2="7000" data-negative-space="wc" data-positive-space="utility" data-thickness-mm="150" data-boundary-kind="wall" data-original-id="edge_dee8601a68db" />
+        <line id="ground__edge_e16672f5e23b" x1="0" y1="7000" x2="0" y2="10000" data-negative-space="outside" data-positive-space="utility" data-thickness-mm="250" data-boundary-kind="wall" data-original-id="edge_e16672f5e23b" />
+        <line id="ground__edge_e6ed7b747676" x1="2600" y1="2500" x2="4400" y2="2500" data-negative-space="foyer" data-positive-space="hall" data-thickness-mm="150" data-boundary-kind="open" data-original-id="edge_e6ed7b747676" />
+        <line id="ground__edge_e961d75f414c" x1="2600" y1="2500" x2="2600" y2="5000" data-negative-space="study" data-positive-space="hall" data-thickness-mm="150" data-boundary-kind="wall" data-original-id="edge_e961d75f414c" />
+        <line id="ground__edge_f5d502772a0e" x1="7500" y1="8300" x2="7500" y2="12000" data-negative-space="outside" data-positive-space="dining" data-thickness-mm="250" data-boundary-kind="wall" data-original-id="edge_f5d502772a0e" />
+      </g>
+      <g id="ground__opening-source" display="none" data-original-id="opening-source">
+        <line id="ground__foyer__study" x1="2600" y1="800" x2="2600" y2="1700" data-host-edge="edge_2b389cea71b0" data-kind="door" data-space="study" data-sill-mm="0" data-height-mm="2100" data-hinge="low" data-original-id="foyer__study" />
+        <line id="ground__hall__utility" x1="2600" y1="8050" x2="2600" y2="8950" data-host-edge="edge_bebecbd82299" data-kind="door" data-space="utility" data-sill-mm="0" data-height-mm="2100" data-hinge="low" data-original-id="hall__utility" />
+        <line id="ground__hall__wc" x1="2600" y1="5550" x2="2600" y2="6450" data-host-edge="edge_4f735ab39fc3" data-kind="door" data-space="wc" data-sill-mm="0" data-height-mm="2100" data-hinge="low" data-original-id="hall__wc" />
+        <line id="ground__outside__foyer" x1="4550" y1="0" x2="5550" y2="0" data-host-edge="edge_16bd0cb7e6ef" data-kind="entry" data-space="foyer" data-sill-mm="0" data-height-mm="2100" data-hinge="low" data-original-id="outside__foyer" />
+        <line id="ground__window_dining" x1="9300" y1="12000" x2="10700" y2="12000" data-host-edge="edge_2e7c36d4bc5c" data-kind="window" data-space="dining" data-sill-mm="900" data-height-mm="1200" data-hinge="none" data-original-id="window_dining" />
+        <line id="ground__window_kitchen" x1="12500" y1="5700" x2="12500" y2="7100" data-host-edge="edge_41c15c2de3db" data-kind="window" data-space="kitchen" data-sill-mm="900" data-height-mm="1200" data-hinge="none" data-original-id="window_kitchen" />
+        <line id="ground__window_living" x1="9300" y1="0" x2="10700" y2="0" data-host-edge="edge_836b50b3d5ab" data-kind="window" data-space="living" data-sill-mm="900" data-height-mm="1200" data-hinge="none" data-original-id="window_living" />
+        <line id="ground__window_study" x1="0" y1="1800" x2="0" y2="3200" data-host-edge="edge_1585a71cbe9a" data-kind="window" data-space="study" data-sill-mm="900" data-height-mm="1200" data-hinge="none" data-original-id="window_study" />
+        <line id="ground__window_utility" x1="0" y1="7800" x2="0" y2="9200" data-host-edge="edge_e16672f5e23b" data-kind="window" data-space="utility" data-sill-mm="900" data-height-mm="1200" data-hinge="none" data-original-id="window_utility" />
+        <line id="ground__window_wc" x1="0" y1="5550" x2="0" y2="6450" data-host-edge="edge_5d5898aab97d" data-kind="window" data-space="wc" data-sill-mm="1400" data-height-mm="700" data-hinge="none" data-original-id="window_wc" />
+      </g>
+      <g id="ground__clear-spaces" data-role="derived" data-original-id="clear-spaces">
+        <g class="plan-space" data-space-id="dining" data-area-mm2="15525000">
+          <rect x="7750" y="8300" width="4500" height="3450" />
+        </g>
+        <g class="plan-hall" data-space-id="foyer" data-area-mm2="10839375">
+          <rect x="2675" y="250" width="4825" height="2175" />
+          <rect x="2675" y="2425" width="1650" height="75" />
+          <rect x="4475" y="2425" width="2950" height="75" />
+        </g>
+        <g class="plan-hall" data-space-id="hall" data-area-mm2="16348125">
+          <rect x="2675" y="2500" width="1650" height="4075" />
+          <rect x="2675" y="6575" width="4825" height="1475" />
+          <rect x="2675" y="8050" width="1475" height="1700" />
+        </g>
+        <g class="plan-space" data-space-id="kitchen" data-area-mm2="17831875">
+          <rect x="7500" y="6575" width="4750" height="1475" />
+          <rect x="7575" y="4500" width="4675" height="2075" />
+          <rect x="7750" y="8050" width="4500" height="250" />
+        </g>
+        <g class="plan-space" data-space-id="living" data-area-mm2="20031875">
+          <rect x="7500" y="250" width="4750" height="2175" />
+          <rect x="7575" y="2425" width="4675" height="2075" />
+        </g>
+        <g class="plan-space" data-space-id="stair" data-area-mm2="11578750">
+          <rect x="4475" y="2500" width="2950" height="3925" />
+        </g>
+        <g class="plan-space" data-space-id="study" data-area-mm2="10635625">
+          <rect x="250" y="250" width="2275" height="4675" />
+        </g>
+        <g class="plan-space" data-space-id="utility" data-area-mm2="6085625">
+          <rect x="250" y="7075" width="2275" height="2675" />
+        </g>
+        <g class="plan-space" data-space-id="wc" data-area-mm2="4208750">
+          <rect x="250" y="5075" width="2275" height="1850" />
+        </g>
+      </g>
+      <g id="ground__wall-cells" display="none" data-role="derived" data-original-id="wall-cells">
+        <rect x="0" y="0" width="4550" height="250" />
+        <rect x="0" y="250" width="250" height="1550" />
+        <rect x="0" y="3200" width="250" height="1725" />
+        <rect x="0" y="4925" width="2675" height="150" />
+        <rect x="0" y="5075" width="250" height="1850" />
+        <rect x="0" y="6925" width="2675" height="150" />
+        <rect x="0" y="7075" width="250" height="725" />
+        <rect x="0" y="9200" width="250" height="550" />
+        <rect x="0" y="9750" width="4400" height="250" />
+        <rect x="2525" y="250" width="150" height="550" />
+        <rect x="2525" y="1700" width="150" height="3225" />
+        <rect x="2525" y="5075" width="150" height="475" />
+        <rect x="2525" y="6450" width="150" height="475" />
+        <rect x="2525" y="7075" width="150" height="975" />
+        <rect x="2525" y="8950" width="150" height="800" />
+        <rect x="4150" y="8050" width="3600" height="250" />
+        <rect x="4150" y="8300" width="250" height="1450" />
+        <rect x="4325" y="2425" width="150" height="4000" />
+        <rect x="4325" y="6425" width="3250" height="150" />
+        <rect x="5550" y="0" width="3750" height="250" />
+        <rect x="7425" y="2425" width="150" height="4000" />
+        <rect x="7500" y="8300" width="250" height="3450" />
+        <rect x="7500" y="11750" width="1800" height="250" />
+        <rect x="10700" y="0" width="1800" height="250" />
+        <rect x="10700" y="11750" width="1800" height="250" />
+        <rect x="12250" y="250" width="250" height="5450" />
+        <rect x="12250" y="7100" width="250" height="4650" />
+      </g>
+      <g id="ground__wall-footprint" class="plan-wall" data-role="derived" data-original-id="wall-footprint">
+        <path d="M 0 0 L 4550 0 L 4550 250 L 2675 250 L 2675 800 L 2525 800 L 2525 250 L 250 250 L 250 1800 L 0 1800 Z M 0 3200 L 250 3200 L 250 4925 L 2525 4925 L 2525 1700 L 2675 1700 L 2675 5550 L 2525 5550 L 2525 5075 L 250 5075 L 250 6925 L 2525 6925 L 2525 6450 L 2675 6450 L 2675 8050 L 2525 8050 L 2525 7075 L 250 7075 L 250 7800 L 0 7800 Z M 0 9200 L 250 9200 L 250 9750 L 2525 9750 L 2525 8950 L 2675 8950 L 2675 9750 L 4150 9750 L 4150 8050 L 7750 8050 L 7750 11750 L 9300 11750 L 9300 12000 L 7500 12000 L 7500 8300 L 4400 8300 L 4400 10000 L 0 10000 Z M 4325 2425 L 4475 2425 L 4475 6425 L 7425 6425 L 7425 2425 L 7575 2425 L 7575 6575 L 4325 6575 Z M 5550 0 L 9300 0 L 9300 250 L 5550 250 Z M 10700 0 L 12500 0 L 12500 5700 L 12250 5700 L 12250 250 L 10700 250 Z M 10700 11750 L 12250 11750 L 12250 7100 L 12500 7100 L 12500 12000 L 10700 12000 Z" fill-rule="evenodd" />
+      </g>
+      <g id="ground__junction-markers" display="none" data-original-id="junction-markers">
+        <circle cx="0" cy="0" r="90" class="plan-node" />
+        <circle cx="0" cy="5000" r="90" class="plan-node" />
+        <circle cx="0" cy="7000" r="90" class="plan-node" />
+        <circle cx="0" cy="10000" r="90" class="plan-node" />
+        <circle cx="2600" cy="0" r="90" class="plan-node" />
+        <circle cx="2600" cy="2500" r="90" class="plan-node" />
+        <circle cx="2600" cy="5000" r="90" class="plan-node" />
+        <circle cx="2600" cy="7000" r="90" class="plan-node" />
+        <circle cx="2600" cy="10000" r="90" class="plan-node" />
+        <circle cx="4400" cy="2500" r="90" class="plan-node" />
+        <circle cx="4400" cy="6500" r="90" class="plan-node" />
+        <circle cx="4400" cy="8300" r="90" class="plan-node" />
+        <circle cx="4400" cy="10000" r="90" class="plan-node" />
+        <circle cx="7500" cy="0" r="90" class="plan-node" />
+        <circle cx="7500" cy="2500" r="90" class="plan-node" />
+        <circle cx="7500" cy="4500" r="90" class="plan-node" />
+        <circle cx="7500" cy="6500" r="90" class="plan-node" />
+        <circle cx="7500" cy="8300" r="90" class="plan-node" />
+        <circle cx="7500" cy="12000" r="90" class="plan-node" />
+        <circle cx="12500" cy="0" r="90" class="plan-node" />
+        <circle cx="12500" cy="4500" r="90" class="plan-node" />
+        <circle cx="12500" cy="8300" r="90" class="plan-node" />
+        <circle cx="12500" cy="12000" r="90" class="plan-node" />
+      </g>
+      <g id="ground__opening-symbols" data-original-id="opening-symbols">
+        <path d="M 2525 800 L 1625 800 M 2525 1700 A 900 900 0 0 1 1625 800" class="plan-line" />
+        <path d="M 2525 8050 L 1625 8050 M 2525 8950 A 900 900 0 0 1 1625 8050" class="plan-line" />
+        <path d="M 2525 5550 L 1625 5550 M 2525 6450 A 900 900 0 0 1 1625 5550" class="plan-line" />
+        <path d="M 4550 250 L 4550 1250 M 5550 250 A 1000 1000 0 0 1 4550 1250" class="plan-line" />
+        <line x1="9300" y1="12000" x2="10700" y2="12000" class="plan-window" />
+        <line x1="12500" y1="5700" x2="12500" y2="7100" class="plan-window" />
+        <line x1="9300" y1="0" x2="10700" y2="0" class="plan-window" />
+        <line x1="0" y1="1800" x2="0" y2="3200" class="plan-window" />
+        <line x1="0" y1="7800" x2="0" y2="9200" class="plan-window" />
+        <line x1="0" y1="5550" x2="0" y2="6450" class="plan-window" />
+      </g>
+      <g id="ground__clearance-guides" display="none" data-original-id="clearance-guides">
+        <rect x="1325" y="650" width="1200" height="1200" class="walk-pad" data-opening-id="foyer__study" data-space-id="study" />
+        <rect x="2675" y="650" width="1200" height="1200" class="walk-pad" data-opening-id="foyer__study" data-space-id="foyer" />
+        <path d="M 2525 800 L 2525 1750 A 950 950 0 0 1 1575 800 Z" class="door-sweep" data-opening-id="foyer__study" />
+        <rect x="1325" y="7900" width="1200" height="1200" class="walk-pad" data-opening-id="hall__utility" data-space-id="utility" />
+        <rect x="2675" y="7900" width="1200" height="1200" class="walk-pad" data-opening-id="hall__utility" data-space-id="hall" />
+        <path d="M 2525 8050 L 2525 9000 A 950 950 0 0 1 1575 8050 Z" class="door-sweep" data-opening-id="hall__utility" />
+        <rect x="1325" y="5400" width="1200" height="1200" class="walk-pad" data-opening-id="hall__wc" data-space-id="wc" />
+        <rect x="2675" y="5400" width="1200" height="1200" class="walk-pad" data-opening-id="hall__wc" data-space-id="hall" />
+        <path d="M 2525 5550 L 2525 6500 A 950 950 0 0 1 1575 5550 Z" class="door-sweep" data-opening-id="hall__wc" />
+        <rect x="4450" y="250" width="1200" height="1200" class="walk-pad" data-opening-id="outside__foyer" data-space-id="foyer" />
+        <path d="M 4550 250 L 5600 250 A 1050 1050 0 0 1 4550 1300 Z" class="door-sweep" data-opening-id="outside__foyer" />
+        <rect x="4675" y="1300" width="1200" height="1200" class="walk-pad" data-stair-pad="true" />
+      </g>
+      <g id="ground__stair-geometry" data-role="stair-reservation" data-original-id="stair-geometry">
+        <rect x="4675" y="2650" width="1200" height="2240" class="stair-line" />
+        <rect x="6025" y="2650" width="1200" height="2240" class="stair-line" />
+        <rect x="4675" y="4890" width="2550" height="1250" class="stair-line" />
+        <line x1="4675" y1="2650" x2="5875" y2="2650" class="stair-line" data-rise="1" data-z-mm="500/3" />
+        <line x1="4675" y1="2930" x2="5875" y2="2930" class="stair-line" data-rise="2" data-z-mm="1000/3" />
+        <line x1="4675" y1="3210" x2="5875" y2="3210" class="stair-line" data-rise="3" data-z-mm="500" />
+        <line x1="4675" y1="3490" x2="5875" y2="3490" class="stair-line" data-rise="4" data-z-mm="2000/3" />
+        <line x1="4675" y1="3770" x2="5875" y2="3770" class="stair-line" data-rise="5" data-z-mm="2500/3" />
+        <line x1="4675" y1="4050" x2="5875" y2="4050" class="stair-line" data-rise="6" data-z-mm="1000" />
+        <line x1="4675" y1="4330" x2="5875" y2="4330" class="stair-line" data-rise="7" data-z-mm="3500/3" />
+        <line x1="4675" y1="4610" x2="5875" y2="4610" class="stair-line" data-rise="8" data-z-mm="4000/3" />
+        <line x1="4675" y1="4890" x2="5875" y2="4890" class="stair-line" data-rise="9" data-z-mm="1500" />
+        <line x1="6025" y1="4890" x2="7225" y2="4890" class="stair-line" data-rise="10" data-z-mm="5000/3" />
+        <line x1="6025" y1="4610" x2="7225" y2="4610" class="stair-line" data-rise="11" data-z-mm="5500/3" />
+        <line x1="6025" y1="4330" x2="7225" y2="4330" class="stair-line" data-rise="12" data-z-mm="2000" />
+        <line x1="6025" y1="4050" x2="7225" y2="4050" class="stair-line" data-rise="13" data-z-mm="6500/3" />
+        <line x1="6025" y1="3770" x2="7225" y2="3770" class="stair-line" data-rise="14" data-z-mm="7000/3" />
+        <line x1="6025" y1="3490" x2="7225" y2="3490" class="stair-line" data-rise="15" data-z-mm="2500" />
+        <line x1="6025" y1="3210" x2="7225" y2="3210" class="stair-line" data-rise="16" data-z-mm="8000/3" />
+        <line x1="6025" y1="2930" x2="7225" y2="2930" class="stair-line" data-rise="17" data-z-mm="8500/3" />
+        <line x1="6025" y1="2650" x2="7225" y2="2650" class="stair-line" data-rise="18" data-z-mm="3000" />
+        <polyline points="5275,1900 5275,5515 6625,5515 6625,1900" class="stair-line" />
+        <polyline points="6725,2120 6625,1900 6525,2120" class="stair-line" />
+      </g>
+      <g id="ground__functional-boundaries" data-role="annotation" data-original-id="functional-boundaries">
+        <line x1="7500" y1="4500" x2="12500" y2="4500" class="zone-boundary" />
+        <line x1="7500" y1="6500" x2="7500" y2="8300" class="zone-boundary" />
+        <line x1="7500" y1="0" x2="7500" y2="2500" class="zone-boundary" />
+        <line x1="7500" y1="8300" x2="12500" y2="8300" class="zone-boundary" />
+        <line x1="2600" y1="2500" x2="4400" y2="2500" class="zone-boundary" />
+      </g>
+    </g>
+    <g id="ground__room-labels" data-original-id="room-labels">
+      <g transform="translate(10000 1975) rotate(0)" data-room-label="dining" data-full-name="Dining" data-area-m2="15.5">
+        <text x="0" y="-180" class="plan-label">Dining</text>
+        <text x="0" y="180" class="plan-label">15.5 m²</text>
+      </g>
+      <g transform="translate(5087 10663) rotate(0)" data-room-label="foyer" data-full-name="Foyer" data-area-m2="10.8">
+        <text x="0" y="-180" class="plan-label">Foyer</text>
+        <text x="0" y="180" class="plan-label">10.8 m²</text>
+      </g>
+      <g transform="translate(3412 5875) rotate(-90)" data-room-label="hall" data-full-name="Hall" data-area-m2="16.3">
+        <text x="0" y="-180" class="plan-label">Hall</text>
+        <text x="0" y="180" class="plan-label">16.3 m²</text>
+      </g>
+      <g transform="translate(10000 5600) rotate(0)" data-room-label="kitchen" data-full-name="Kitchen" data-area-m2="17.8">
+        <text x="0" y="-180" class="plan-label">Kitchen</text>
+        <text x="0" y="180" class="plan-label">17.8 m²</text>
+      </g>
+      <g transform="translate(9912 9625) rotate(0)" data-room-label="living" data-full-name="Living" data-area-m2="20.0">
+        <text x="0" y="-180" class="plan-label">Living</text>
+        <text x="0" y="180" class="plan-label">20.0 m²</text>
+      </g>
+      <g transform="translate(1387 9413) rotate(0)" data-room-label="study" data-full-name="Study / guest" data-area-m2="10.6">
+        <text x="0" y="-360" class="plan-label">Study</text>
+        <text x="0" y="0" class="plan-label">guest</text>
+        <text x="0" y="360" class="plan-label">10.6 m²</text>
+      </g>
+      <g transform="translate(1387 3588) rotate(0)" data-room-label="utility" data-full-name="Utility" data-area-m2="6.1">
+        <text x="0" y="-180" class="plan-label">Utility</text>
+        <text x="0" y="180" class="plan-label">6.1 m²</text>
+      </g>
+      <g transform="translate(1387 6000) rotate(0)" data-room-label="wc" data-full-name="WC" data-area-m2="4.2">
+        <text x="0" y="-180" class="plan-label">WC</text>
+        <text x="0" y="180" class="plan-label">4.2 m²</text>
+      </g>
+      <text x="6250" y="-420" class="plan-label">12.5 × 12 m envelope</text>
+      <text x="5050" y="12650" class="plan-label plan-detail">ENTRY / STREET</text>
+    </g>
+    <metadata id="ground__house-program" data-original-id="house-program">{"builtins":[],"connections":[{"a":"outside","b":"foyer","kind":"entry","served":"foyer","width":1000},{"a":"foyer","b":"study","kind":"door","served":"study","width":900},{"a":"foyer","b":"hall","kind":"open","served":"hall","width":900},{"a":"foyer","b":"stair","kind":"open","served":"stair","width":900},{"a":"foyer","b":"living","kind":"open","served":"living","width":900},{"a":"hall","b":"wc","kind":"door","served":"wc","width":900},{"a":"hall","b":"utility","kind":"door","served":"utility","width":900},{"a":"hall","b":"kitchen","kind":"open","served":"kitchen","width":900},{"a":"living","b":"kitchen","kind":"open","served":"kitchen","width":900},{"a":"kitchen","b":"dining","kind":"open","served":"dining","width":900}],"floor":"ground","placements":[{"anchor":"quiet front wing","module_mm":[2600,5000],"room":"study"},{"anchor":"between study and family wing","module_mm":[4900,2500],"room":"foyer"},{"anchor":"behind foyer; opening faces south","module_mm":[3100,4000],"room":"stair"},{"anchor":"quiet service corridor","module_mm":[1800,7500],"room":"hall"},{"anchor":"cross hall behind stair","extension":true,"module_mm":[3100,1800],"room":"hall"},{"anchor":"behind study","module_mm":[2600,2000],"room":"wc"},{"anchor":"behind WC; service hall access","module_mm":[2600,3000],"room":"utility"},{"anchor":"front of open family wing","module_mm":[5000,4500],"room":"living"},{"anchor":"between living and dining; wet stack","module_mm":[5000,3800],"room":"kitchen"},{"anchor":"garden end of family wing","module_mm":[5000,3700],"room":"dining"}],"profile":"Central stair / open family wing","program":{"clearance":{"circulation_square_mm":1200,"swing_margin_mm":50},"construction":"timber_frame_concept","floor_to_floor_mm":3000,"id":"house.two_storey.three_bedroom.study","linen_storage":{"floor":"upper","maximum_room_m2":6.5,"minimum_shelf_mm":[1200,350],"representation":"room_or_builtin"},"relationships":{"bathroom_access":"from upper circulation","bedroom_access":"from landing/upper hall; never through another bedroom","family_open_group":["living","dining","kitchen"],"privacy":"study and bedrooms are destinations, not through routes","public_family_access_from":["foyer","hall"],"required":[["outside","foyer"],["foyer","study"],["foyer","hall"],["hall","wc"],["hall","utility"],["kitchen","dining"],["landing","upper_hall"]],"stair":"ground circulation to upper landing; aligned shaft and deliberate approach pads","wet_stack":"upper bathroom overlaps ground kitchen/utility/WC service footprint"},"rooms":{"bath":{"area_m2":[5.5,10],"fit_mm":[2000,2500],"floor":"upper","name":"Bathroom","role":"service"},"bed2":{"area_m2":[11,21],"fit_mm":[2800,3200],"floor":"upper","name":"Bedroom 2","role":"private"},"bed3":{"area_m2":[11,21],"fit_mm":[2800,3200],"floor":"upper","name":"Bedroom 3","role":"private"},"dining":{"area_m2":[12,24],"fit_mm":[2800,3000],"floor":"ground","name":"Dining","role":"family"},"foyer":{"area_m2":[5,13],"fit_mm":[1600,1800],"floor":"ground","name":"Foyer","role":"circulation"},"hall":{"area_m2":[5,22],"fit_mm":[1300,1800],"floor":"ground","name":"Hall","role":"circulation"},"kitchen":{"area_m2":[10,20],"fit_mm":[2800,3000],"floor":"ground","name":"Kitchen","role":"family"},"landing":{"area_m2":[5,13],"fit_mm":[1600,1800],"floor":"upper","name":"Landing","role":"circulation"},"living":{"area_m2":[18,34],"fit_mm":[3000,3600],"floor":"ground","name":"Living","role":"family"},"primary":{"area_m2":[18,34],"fit_mm":[3200,3600],"floor":"upper","name":"Primary suite","role":"private"},"study":{"area_m2":[10,17],"fit_mm":[2200,3000],"floor":"ground","name":"Study / guest","role":"private"},"upper_hall":{"area_m2":[5,24],"fit_mm":[1300,1800],"floor":"upper","name":"Upper hall","role":"circulation"},"utility":{"area_m2":[4.5,10],"fit_mm":[1800,2100],"floor":"ground","name":"Utility","role":"service"},"wc":{"area_m2":[3,6.5],"fit_mm":[1500,1700],"floor":"ground","name":"WC","role":"service"}},"schema":1,"scope":"Schematic source-asset study. Furniture/use fits, shared-wall clearances and aligned stair reservation; no engineering or building-code acceptance.","site":{"front":"south","maximum_height_storeys":2,"plot_mm":[24000,24000]},"stair":{"approach_square_mm":1200,"flight_clear_mm":1200,"going_mm":280,"mid_landing_depth_mm":1250,"reserved_headroom_mm":2200,"rises":18,"shaft_mm":[3100,4000],"type":"u_return"},"units":"mm"},"scheme":"family-wing","stair":{"origin":[4400,2500],"rotation":0}}</metadata>
+    <style>.stair-line{fill:none;stroke:currentColor;stroke-width:20}.stair-void{fill:none;stroke:currentColor;stroke-width:20;stroke-dasharray:80 60}.functional-item{fill:none;stroke:currentColor;stroke-width:18}.zone-boundary{fill:none;stroke:currentColor;stroke-width:12;stroke-dasharray:100 100;opacity:.25}</style>
+  </svg>
+  <text x="21550" y="400" text-anchor="middle" class="floor-heading">UPPER · DOWN / OPENING</text>
+  <svg viewBox="-700 -3000 13900 14100" width="13900" height="14100" data-units="mm" data-layout-id="family-wing-upper" data-seed="0" data-min-walk-mm="1200" data-swing-margin-mm="50" role="img" data-room-program-schema="1" data-floor="upper" data-floor-z-mm="3000" x="14600" y="700">
+    <title>room-program — Central stair / open family wing</title>
+    <desc>Connected-space generation study. Finished envelope, shared boundaries and hosted openings. Single-level concept; no stair or structural design.</desc>
+    <style>.plan-wall{fill:currentColor}.plan-space{fill:currentColor;fill-opacity:.025}.plan-hall{fill:currentColor;fill-opacity:.07}.plan-line{fill:none;stroke:currentColor;stroke-width:18}.plan-window{fill:none;stroke:currentColor;stroke-width:28}.plan-label{font-family:Arial,sans-serif;font-size:260px;text-anchor:middle;fill:currentColor}.plan-detail{font-size:230px}.plan-node{fill:none;stroke:currentColor;stroke-width:20}</style>
+    <style>.walk-pad{fill:currentColor;fill-opacity:.04;stroke:currentColor;stroke-width:15;stroke-dasharray:70 60}.door-sweep{fill:currentColor;fill-opacity:.08;stroke:none}</style>
+    <g id="upper__world-mm" transform="translate(0 10000) scale(1 -1)" data-original-id="world-mm">
+      <g id="upper__footprint-source" display="none" data-original-id="footprint-source">
+        <rect x="0" y="0" width="12500" height="8300" />
+        <rect x="0" y="8300" width="4400" height="1700" />
+      </g>
+      <g id="upper__spaces-source" display="none" data-original-id="spaces-source">
+        <g data-space-id="bath" data-name="Bathroom">
+          <rect x="9300" y="5000" width="3200" height="3300" />
+        </g>
+        <g data-space-id="bed2" data-name="Bedroom 2">
+          <rect x="0" y="5500" width="4400" height="4500" />
+        </g>
+        <g data-space-id="bed3" data-name="Bedroom 3">
+          <rect x="9300" y="0" width="3200" height="5000" />
+        </g>
+        <g data-space-id="landing" data-name="Landing">
+          <rect x="4400" y="0" width="4900" height="2500" />
+        </g>
+        <g data-space-id="primary" data-name="Primary suite">
+          <rect x="0" y="0" width="4400" height="5500" />
+        </g>
+        <g data-space-id="stair" data-name="Stair opening">
+          <rect x="4400" y="2500" width="3100" height="4000" />
+        </g>
+        <g data-space-id="upper_hall" data-name="Upper hall">
+          <rect x="4400" y="6500" width="4900" height="1800" />
+          <rect x="7500" y="2500" width="1800" height="4000" />
+        </g>
+      </g>
+      <g id="upper__shared-boundaries" display="none" data-original-id="shared-boundaries">
+        <line id="upper__edge_00fbf252b9ed" x1="4400" y1="0" x2="9300" y2="0" data-negative-space="outside" data-positive-space="landing" data-thickness-mm="250" data-boundary-kind="wall" data-original-id="edge_00fbf252b9ed" />
+        <line id="upper__edge_0934f2020a87" x1="4400" y1="6500" x2="7500" y2="6500" data-negative-space="stair" data-positive-space="upper_hall" data-thickness-mm="150" data-boundary-kind="wall" data-original-id="edge_0934f2020a87" />
+        <line id="upper__edge_1bbedd9054e3" x1="0" y1="0" x2="0" y2="5500" data-negative-space="outside" data-positive-space="primary" data-thickness-mm="250" data-boundary-kind="wall" data-original-id="edge_1bbedd9054e3" />
+        <line id="upper__edge_1f7619f06c5b" x1="7500" y1="2500" x2="7500" y2="6500" data-negative-space="stair" data-positive-space="upper_hall" data-thickness-mm="150" data-boundary-kind="wall" data-original-id="edge_1f7619f06c5b" />
+        <line id="upper__edge_252fa1694ac1" x1="9300" y1="5000" x2="12500" y2="5000" data-negative-space="bed3" data-positive-space="bath" data-thickness-mm="150" data-boundary-kind="wall" data-original-id="edge_252fa1694ac1" />
+        <line id="upper__edge_38791b193f3c" x1="7500" y1="2500" x2="9300" y2="2500" data-negative-space="landing" data-positive-space="upper_hall" data-thickness-mm="150" data-boundary-kind="open" data-original-id="edge_38791b193f3c" />
+        <line id="upper__edge_4538dd5922f5" x1="4400" y1="8300" x2="9300" y2="8300" data-negative-space="upper_hall" data-positive-space="outside" data-thickness-mm="250" data-boundary-kind="wall" data-original-id="edge_4538dd5922f5" />
+        <line id="upper__edge_463e7dadc6d1" x1="4400" y1="2500" x2="4400" y2="5500" data-negative-space="primary" data-positive-space="stair" data-thickness-mm="150" data-boundary-kind="wall" data-original-id="edge_463e7dadc6d1" />
+        <line id="upper__edge_4bb54bd4dd82" x1="9300" y1="2500" x2="9300" y2="5000" data-negative-space="upper_hall" data-positive-space="bed3" data-thickness-mm="150" data-boundary-kind="wall" data-original-id="edge_4bb54bd4dd82" />
+        <line id="upper__edge_5bd0399da137" x1="4400" y1="6500" x2="4400" y2="8300" data-negative-space="bed2" data-positive-space="upper_hall" data-thickness-mm="150" data-boundary-kind="wall" data-original-id="edge_5bd0399da137" />
+        <line id="upper__edge_6207a31fbd2e" x1="0" y1="5500" x2="0" y2="10000" data-negative-space="outside" data-positive-space="bed2" data-thickness-mm="250" data-boundary-kind="wall" data-original-id="edge_6207a31fbd2e" />
+        <line id="upper__edge_62e8da236a1b" x1="4400" y1="5500" x2="4400" y2="6500" data-negative-space="bed2" data-positive-space="stair" data-thickness-mm="150" data-boundary-kind="wall" data-original-id="edge_62e8da236a1b" />
+        <line id="upper__edge_6a41e0a7a303" x1="9300" y1="0" x2="9300" y2="2500" data-negative-space="landing" data-positive-space="bed3" data-thickness-mm="150" data-boundary-kind="wall" data-original-id="edge_6a41e0a7a303" />
+        <line id="upper__edge_6beb0d6a7e4e" x1="4400" y1="0" x2="4400" y2="2500" data-negative-space="primary" data-positive-space="landing" data-thickness-mm="150" data-boundary-kind="wall" data-original-id="edge_6beb0d6a7e4e" />
+        <line id="upper__edge_720c8ea85c6a" x1="9300" y1="0" x2="12500" y2="0" data-negative-space="outside" data-positive-space="bed3" data-thickness-mm="250" data-boundary-kind="wall" data-original-id="edge_720c8ea85c6a" />
+        <line id="upper__edge_7996ececc9e9" x1="12500" y1="0" x2="12500" y2="5000" data-negative-space="bed3" data-positive-space="outside" data-thickness-mm="250" data-boundary-kind="wall" data-original-id="edge_7996ececc9e9" />
+        <line id="upper__edge_81f87235702e" x1="4400" y1="8300" x2="4400" y2="10000" data-negative-space="bed2" data-positive-space="outside" data-thickness-mm="250" data-boundary-kind="wall" data-original-id="edge_81f87235702e" />
+        <line id="upper__edge_8ac01e10640f" x1="12500" y1="5000" x2="12500" y2="8300" data-negative-space="bath" data-positive-space="outside" data-thickness-mm="250" data-boundary-kind="wall" data-original-id="edge_8ac01e10640f" />
+        <line id="upper__edge_aefcd7dabbf4" x1="0" y1="10000" x2="4400" y2="10000" data-negative-space="bed2" data-positive-space="outside" data-thickness-mm="250" data-boundary-kind="wall" data-original-id="edge_aefcd7dabbf4" />
+        <line id="upper__edge_b228c04e8846" x1="9300" y1="8300" x2="12500" y2="8300" data-negative-space="bath" data-positive-space="outside" data-thickness-mm="250" data-boundary-kind="wall" data-original-id="edge_b228c04e8846" />
+        <line id="upper__edge_bb5aaa343784" x1="4400" y1="2500" x2="7500" y2="2500" data-negative-space="landing" data-positive-space="stair" data-thickness-mm="150" data-boundary-kind="open" data-original-id="edge_bb5aaa343784" />
+        <line id="upper__edge_bc860259d282" x1="0" y1="5500" x2="4400" y2="5500" data-negative-space="primary" data-positive-space="bed2" data-thickness-mm="150" data-boundary-kind="wall" data-original-id="edge_bc860259d282" />
+        <line id="upper__edge_c48442e9e7df" x1="9300" y1="5000" x2="9300" y2="8300" data-negative-space="upper_hall" data-positive-space="bath" data-thickness-mm="150" data-boundary-kind="wall" data-original-id="edge_c48442e9e7df" />
+        <line id="upper__edge_ef8ef5e4b8dd" x1="0" y1="0" x2="4400" y2="0" data-negative-space="outside" data-positive-space="primary" data-thickness-mm="250" data-boundary-kind="wall" data-original-id="edge_ef8ef5e4b8dd" />
+      </g>
+      <g id="upper__opening-source" display="none" data-original-id="opening-source">
+        <line id="upper__landing__bed3" x1="9300" y1="800" x2="9300" y2="1700" data-host-edge="edge_6a41e0a7a303" data-kind="door" data-space="bed3" data-sill-mm="0" data-height-mm="2100" data-hinge="low" data-original-id="landing__bed3" />
+        <line id="upper__landing__primary" x1="4400" y1="800" x2="4400" y2="1700" data-host-edge="edge_6beb0d6a7e4e" data-kind="door" data-space="primary" data-sill-mm="0" data-height-mm="2100" data-hinge="low" data-original-id="landing__primary" />
+        <line id="upper__upper_hall__bath" x1="9300" y1="6200" x2="9300" y2="7100" data-host-edge="edge_c48442e9e7df" data-kind="door" data-space="bath" data-sill-mm="0" data-height-mm="2100" data-hinge="low" data-original-id="upper_hall__bath" />
+        <line id="upper__upper_hall__bed2" x1="4400" y1="6950" x2="4400" y2="7850" data-host-edge="edge_5bd0399da137" data-kind="door" data-space="bed2" data-sill-mm="0" data-height-mm="2100" data-hinge="low" data-original-id="upper_hall__bed2" />
+        <line id="upper__window_bath" x1="12500" y1="6200" x2="12500" y2="7100" data-host-edge="edge_8ac01e10640f" data-kind="window" data-space="bath" data-sill-mm="1400" data-height-mm="700" data-hinge="none" data-original-id="window_bath" />
+        <line id="upper__window_bed2" x1="0" y1="7050" x2="0" y2="8450" data-host-edge="edge_6207a31fbd2e" data-kind="window" data-space="bed2" data-sill-mm="900" data-height-mm="1200" data-hinge="none" data-original-id="window_bed2" />
+        <line id="upper__window_bed3" x1="12500" y1="1800" x2="12500" y2="3200" data-host-edge="edge_7996ececc9e9" data-kind="window" data-space="bed3" data-sill-mm="900" data-height-mm="1200" data-hinge="none" data-original-id="window_bed3" />
+        <line id="upper__window_primary" x1="0" y1="2050" x2="0" y2="3450" data-host-edge="edge_1bbedd9054e3" data-kind="window" data-space="primary" data-sill-mm="900" data-height-mm="1200" data-hinge="none" data-original-id="window_primary" />
+      </g>
+      <g id="upper__clear-spaces" data-role="derived" data-original-id="clear-spaces">
+        <g class="plan-space" data-space-id="bath" data-area-mm2="8553125">
+          <rect x="9375" y="5075" width="2875" height="2975" />
+        </g>
+        <g class="plan-space" data-space-id="bed2" data-area-mm2="16715625">
+          <rect x="250" y="5575" width="4075" height="2475" />
+          <rect x="250" y="8050" width="3900" height="1700" />
+        </g>
+        <g class="plan-space" data-space-id="bed3" data-area-mm2="13440625">
+          <rect x="9375" y="250" width="2875" height="4675" />
+        </g>
+        <g class="plan-hall" data-space-id="landing" data-area-mm2="10676250">
+          <rect x="4475" y="250" width="4750" height="2175" />
+          <rect x="4475" y="2425" width="2950" height="75" />
+          <rect x="7575" y="2425" width="1650" height="75" />
+        </g>
+        <g class="plan-space" data-space-id="primary" data-area-mm2="21088125">
+          <rect x="250" y="250" width="4075" height="5175" />
+        </g>
+        <g class="plan-space" data-space-id="stair" data-area-mm2="11578750">
+          <rect x="4475" y="2500" width="2950" height="3925" />
+        </g>
+        <g class="plan-hall" data-space-id="upper_hall" data-area-mm2="13730000">
+          <rect x="4475" y="6575" width="4750" height="1475" />
+          <rect x="7575" y="2500" width="1650" height="4075" />
+        </g>
+      </g>
+      <g id="upper__wall-cells" display="none" data-role="derived" data-original-id="wall-cells">
+        <rect x="0" y="0" width="12500" height="250" />
+        <rect x="0" y="250" width="250" height="1800" />
+        <rect x="0" y="3450" width="250" height="1975" />
+        <rect x="0" y="5425" width="4475" height="150" />
+        <rect x="0" y="5575" width="250" height="1475" />
+        <rect x="0" y="8450" width="250" height="1300" />
+        <rect x="0" y="9750" width="4400" height="250" />
+        <rect x="4150" y="8050" width="8350" height="250" />
+        <rect x="4150" y="8300" width="250" height="1450" />
+        <rect x="4325" y="250" width="150" height="550" />
+        <rect x="4325" y="1700" width="150" height="3725" />
+        <rect x="4325" y="5575" width="150" height="850" />
+        <rect x="4325" y="6425" width="3250" height="150" />
+        <rect x="4325" y="6575" width="150" height="375" />
+        <rect x="4325" y="7850" width="150" height="200" />
+        <rect x="7425" y="2425" width="150" height="4000" />
+        <rect x="9225" y="250" width="150" height="550" />
+        <rect x="9225" y="1700" width="150" height="3225" />
+        <rect x="9225" y="4925" width="3275" height="150" />
+        <rect x="9225" y="5075" width="150" height="1125" />
+        <rect x="9225" y="7100" width="150" height="950" />
+        <rect x="12250" y="250" width="250" height="1550" />
+        <rect x="12250" y="3200" width="250" height="1725" />
+        <rect x="12250" y="5075" width="250" height="2975" />
+      </g>
+      <g id="upper__wall-footprint" class="plan-wall" data-role="derived" data-original-id="wall-footprint">
+        <path d="M 0 0 L 12500 0 L 12500 1800 L 12250 1800 L 12250 250 L 9375 250 L 9375 800 L 9225 800 L 9225 250 L 4475 250 L 4475 800 L 4325 800 L 4325 250 L 250 250 L 250 2050 L 0 2050 Z M 0 3450 L 250 3450 L 250 5425 L 4325 5425 L 4325 1700 L 4475 1700 L 4475 6425 L 7425 6425 L 7425 2425 L 7575 2425 L 7575 6575 L 4475 6575 L 4475 6950 L 4325 6950 L 4325 5575 L 250 5575 L 250 7050 L 0 7050 Z M 0 8450 L 250 8450 L 250 9750 L 4150 9750 L 4150 8050 L 4325 8050 L 4325 7850 L 4475 7850 L 4475 8050 L 9225 8050 L 9225 7100 L 9375 7100 L 9375 8050 L 12250 8050 L 12250 5075 L 9375 5075 L 9375 6200 L 9225 6200 L 9225 1700 L 9375 1700 L 9375 4925 L 12250 4925 L 12250 3200 L 12500 3200 L 12500 8300 L 4400 8300 L 4400 10000 L 0 10000 Z" fill-rule="evenodd" />
+      </g>
+      <g id="upper__junction-markers" display="none" data-original-id="junction-markers">
+        <circle cx="0" cy="0" r="90" class="plan-node" />
+        <circle cx="0" cy="5500" r="90" class="plan-node" />
+        <circle cx="0" cy="10000" r="90" class="plan-node" />
+        <circle cx="4400" cy="0" r="90" class="plan-node" />
+        <circle cx="4400" cy="2500" r="90" class="plan-node" />
+        <circle cx="4400" cy="5500" r="90" class="plan-node" />
+        <circle cx="4400" cy="6500" r="90" class="plan-node" />
+        <circle cx="4400" cy="8300" r="90" class="plan-node" />
+        <circle cx="4400" cy="10000" r="90" class="plan-node" />
+        <circle cx="7500" cy="2500" r="90" class="plan-node" />
+        <circle cx="7500" cy="6500" r="90" class="plan-node" />
+        <circle cx="9300" cy="0" r="90" class="plan-node" />
+        <circle cx="9300" cy="2500" r="90" class="plan-node" />
+        <circle cx="9300" cy="5000" r="90" class="plan-node" />
+        <circle cx="9300" cy="8300" r="90" class="plan-node" />
+        <circle cx="12500" cy="0" r="90" class="plan-node" />
+        <circle cx="12500" cy="5000" r="90" class="plan-node" />
+        <circle cx="12500" cy="8300" r="90" class="plan-node" />
+      </g>
+      <g id="upper__opening-symbols" data-original-id="opening-symbols">
+        <path d="M 9375 800 L 10275 800 M 9375 1700 A 900 900 0 0 0 10275 800" class="plan-line" />
+        <path d="M 4325 800 L 3425 800 M 4325 1700 A 900 900 0 0 1 3425 800" class="plan-line" />
+        <path d="M 9375 6200 L 10275 6200 M 9375 7100 A 900 900 0 0 0 10275 6200" class="plan-line" />
+        <path d="M 4325 6950 L 3425 6950 M 4325 7850 A 900 900 0 0 1 3425 6950" class="plan-line" />
+        <line x1="12500" y1="6200" x2="12500" y2="7100" class="plan-window" />
+        <line x1="0" y1="7050" x2="0" y2="8450" class="plan-window" />
+        <line x1="12500" y1="1800" x2="12500" y2="3200" class="plan-window" />
+        <line x1="0" y1="2050" x2="0" y2="3450" class="plan-window" />
+      </g>
+      <g id="upper__clearance-guides" display="none" data-original-id="clearance-guides">
+        <rect x="8025" y="650" width="1200" height="1200" class="walk-pad" data-opening-id="landing__bed3" data-space-id="landing" />
+        <rect x="9375" y="650" width="1200" height="1200" class="walk-pad" data-opening-id="landing__bed3" data-space-id="bed3" />
+        <path d="M 9375 800 L 9375 1750 A 950 950 0 0 0 10325 800 Z" class="door-sweep" data-opening-id="landing__bed3" />
+        <rect x="3125" y="650" width="1200" height="1200" class="walk-pad" data-opening-id="landing__primary" data-space-id="primary" />
+        <rect x="4475" y="650" width="1200" height="1200" class="walk-pad" data-opening-id="landing__primary" data-space-id="landing" />
+        <path d="M 4325 800 L 4325 1750 A 950 950 0 0 1 3375 800 Z" class="door-sweep" data-opening-id="landing__primary" />
+        <rect x="8025" y="6050" width="1200" height="1200" class="walk-pad" data-opening-id="upper_hall__bath" data-space-id="upper_hall" />
+        <rect x="9375" y="6050" width="1200" height="1200" class="walk-pad" data-opening-id="upper_hall__bath" data-space-id="bath" />
+        <path d="M 9375 6200 L 9375 7150 A 950 950 0 0 0 10325 6200 Z" class="door-sweep" data-opening-id="upper_hall__bath" />
+        <rect x="3125" y="6800" width="1200" height="1200" class="walk-pad" data-opening-id="upper_hall__bed2" data-space-id="bed2" />
+        <rect x="4475" y="6800" width="1200" height="1200" class="walk-pad" data-opening-id="upper_hall__bed2" data-space-id="upper_hall" />
+        <path d="M 4325 6950 L 4325 7900 A 950 950 0 0 1 3375 6950 Z" class="door-sweep" data-opening-id="upper_hall__bed2" />
+        <rect x="6025" y="1300" width="1200" height="1200" class="walk-pad" data-stair-pad="true" />
+      </g>
+      <g id="upper__stair-geometry" data-role="stair-reservation" data-original-id="stair-geometry">
+        <rect x="4675" y="2650" width="1200" height="2240" class="stair-line" />
+        <rect x="6025" y="2650" width="1200" height="2240" class="stair-line" />
+        <rect x="4675" y="4890" width="2550" height="1250" class="stair-line" />
+        <line x1="4675" y1="2650" x2="5875" y2="2650" class="stair-line" data-rise="1" data-z-mm="500/3" />
+        <line x1="4675" y1="2930" x2="5875" y2="2930" class="stair-line" data-rise="2" data-z-mm="1000/3" />
+        <line x1="4675" y1="3210" x2="5875" y2="3210" class="stair-line" data-rise="3" data-z-mm="500" />
+        <line x1="4675" y1="3490" x2="5875" y2="3490" class="stair-line" data-rise="4" data-z-mm="2000/3" />
+        <line x1="4675" y1="3770" x2="5875" y2="3770" class="stair-line" data-rise="5" data-z-mm="2500/3" />
+        <line x1="4675" y1="4050" x2="5875" y2="4050" class="stair-line" data-rise="6" data-z-mm="1000" />
+        <line x1="4675" y1="4330" x2="5875" y2="4330" class="stair-line" data-rise="7" data-z-mm="3500/3" />
+        <line x1="4675" y1="4610" x2="5875" y2="4610" class="stair-line" data-rise="8" data-z-mm="4000/3" />
+        <line x1="4675" y1="4890" x2="5875" y2="4890" class="stair-line" data-rise="9" data-z-mm="1500" />
+        <line x1="6025" y1="4890" x2="7225" y2="4890" class="stair-line" data-rise="10" data-z-mm="5000/3" />
+        <line x1="6025" y1="4610" x2="7225" y2="4610" class="stair-line" data-rise="11" data-z-mm="5500/3" />
+        <line x1="6025" y1="4330" x2="7225" y2="4330" class="stair-line" data-rise="12" data-z-mm="2000" />
+        <line x1="6025" y1="4050" x2="7225" y2="4050" class="stair-line" data-rise="13" data-z-mm="6500/3" />
+        <line x1="6025" y1="3770" x2="7225" y2="3770" class="stair-line" data-rise="14" data-z-mm="7000/3" />
+        <line x1="6025" y1="3490" x2="7225" y2="3490" class="stair-line" data-rise="15" data-z-mm="2500" />
+        <line x1="6025" y1="3210" x2="7225" y2="3210" class="stair-line" data-rise="16" data-z-mm="8000/3" />
+        <line x1="6025" y1="2930" x2="7225" y2="2930" class="stair-line" data-rise="17" data-z-mm="8500/3" />
+        <line x1="6025" y1="2650" x2="7225" y2="2650" class="stair-line" data-rise="18" data-z-mm="3000" />
+        <polyline points="5275,1900 5275,5515 6625,5515 6625,1900" class="stair-line" />
+        <polyline points="5375,2120 5275,1900 5175,2120" class="stair-line" />
+        <g id="upper__floor-opening-source" display="none" data-original-id="floor-opening-source">
+          <rect x="4650" y="2500" width="1375" height="150" data-floor-opening="true" />
+          <rect x="4650" y="2650" width="2600" height="3600" data-floor-opening="true" />
+        </g>
+        <path d="M 4650 2500 L 6025 2500 L 6025 2650 L 7250 2650 L 7250 6250 L 4650 6250 Z" class="stair-void" />
+      </g>
+      <g id="upper__functional-boundaries" data-role="annotation" data-original-id="functional-boundaries">
+        <line x1="7500" y1="2500" x2="9300" y2="2500" class="zone-boundary" />
+      </g>
+      <rect x="6000" y="250" width="1200" height="600" class="functional-item" data-function="linen" />
+    </g>
+    <g id="upper__room-labels" data-original-id="room-labels">
+      <g transform="translate(10812 3438) rotate(0)" data-room-label="bath" data-full-name="Bathroom" data-area-m2="8.6">
+        <text x="0" y="-180" class="plan-label">Bathroom</text>
+        <text x="0" y="180" class="plan-label">8.6 m²</text>
+      </g>
+      <g transform="translate(2200 2338) rotate(0)" data-room-label="bed2" data-full-name="Bedroom 2" data-area-m2="16.7">
+        <text x="0" y="-360" class="plan-label">Bedroom</text>
+        <text x="0" y="0" class="plan-label">2</text>
+        <text x="0" y="360" class="plan-label">16.7 m²</text>
+      </g>
+      <g transform="translate(10812 7413) rotate(0)" data-room-label="bed3" data-full-name="Bedroom 3" data-area-m2="13.4">
+        <text x="0" y="-360" class="plan-label">Bedroom</text>
+        <text x="0" y="0" class="plan-label">3</text>
+        <text x="0" y="360" class="plan-label">13.4 m²</text>
+      </g>
+      <g transform="translate(6850 8663) rotate(0)" data-room-label="landing" data-full-name="Landing" data-area-m2="10.7">
+        <text x="0" y="-180" class="plan-label">Landing</text>
+        <text x="0" y="180" class="plan-label">10.7 m²</text>
+      </g>
+      <g transform="translate(2287 7163) rotate(0)" data-room-label="primary" data-full-name="Primary suite" data-area-m2="21.1">
+        <text x="0" y="-180" class="plan-label">Primary suite</text>
+        <text x="0" y="180" class="plan-label">21.1 m²</text>
+      </g>
+      <g transform="translate(8400 4725) rotate(-90)" data-room-label="upper_hall" data-full-name="Upper hall" data-area-m2="13.7">
+        <text x="0" y="-180" class="plan-label">Upper hall</text>
+        <text x="0" y="180" class="plan-label">13.7 m²</text>
+      </g>
+      <text x="6250" y="-420" class="plan-label">12.5 × 10 m envelope</text>
+      <text x="6250" y="10650" class="plan-label plan-detail">UPPER FLOOR · STREET SIDE</text>
+      <text x="6600" y="9450" class="plan-label" data-builtin-label="true">Linen</text>
+    </g>
+    <metadata id="upper__house-program" data-original-id="house-program">{"builtins":[{"id":"linen_builtin","kind":"linen","rect":[6000,250,7200,850],"space":"landing"}],"connections":[{"a":"landing","b":"stair","kind":"open","served":"stair","width":900},{"a":"landing","b":"upper_hall","kind":"open","served":"upper_hall","width":900},{"a":"landing","b":"primary","kind":"door","served":"primary","width":900},{"a":"landing","b":"bed3","kind":"door","served":"bed3","width":900},{"a":"upper_hall","b":"bed2","kind":"door","served":"bed2","width":900},{"a":"upper_hall","b":"bath","kind":"door","served":"bath","width":900}],"floor":"upper","placements":[{"anchor":"front quiet suite with fitted wardrobe","module_mm":[4400,5500],"room":"primary"},{"anchor":"rear quiet bedroom","module_mm":[4400,4500],"room":"bed2"},{"anchor":"stair arrival and linen cupboard","module_mm":[4900,2500],"room":"landing"},{"anchor":"same shaft as ground","module_mm":[3100,4000],"room":"stair"},{"anchor":"east side of stair","module_mm":[1800,5800],"room":"upper_hall"},{"anchor":"return to rear bedroom","extension":true,"module_mm":[3100,1800],"room":"upper_hall"},{"anchor":"front of east wing","module_mm":[3200,5000],"room":"bed3"},{"anchor":"over kitchen","module_mm":[3200,3300],"room":"bath"}],"profile":"Central stair / open family wing","program":{"clearance":{"circulation_square_mm":1200,"swing_margin_mm":50},"construction":"timber_frame_concept","floor_to_floor_mm":3000,"id":"house.two_storey.three_bedroom.study","linen_storage":{"floor":"upper","maximum_room_m2":6.5,"minimum_shelf_mm":[1200,350],"representation":"room_or_builtin"},"relationships":{"bathroom_access":"from upper circulation","bedroom_access":"from landing/upper hall; never through another bedroom","family_open_group":["living","dining","kitchen"],"privacy":"study and bedrooms are destinations, not through routes","public_family_access_from":["foyer","hall"],"required":[["outside","foyer"],["foyer","study"],["foyer","hall"],["hall","wc"],["hall","utility"],["kitchen","dining"],["landing","upper_hall"]],"stair":"ground circulation to upper landing; aligned shaft and deliberate approach pads","wet_stack":"upper bathroom overlaps ground kitchen/utility/WC service footprint"},"rooms":{"bath":{"area_m2":[5.5,10],"fit_mm":[2000,2500],"floor":"upper","name":"Bathroom","role":"service"},"bed2":{"area_m2":[11,21],"fit_mm":[2800,3200],"floor":"upper","name":"Bedroom 2","role":"private"},"bed3":{"area_m2":[11,21],"fit_mm":[2800,3200],"floor":"upper","name":"Bedroom 3","role":"private"},"dining":{"area_m2":[12,24],"fit_mm":[2800,3000],"floor":"ground","name":"Dining","role":"family"},"foyer":{"area_m2":[5,13],"fit_mm":[1600,1800],"floor":"ground","name":"Foyer","role":"circulation"},"hall":{"area_m2":[5,22],"fit_mm":[1300,1800],"floor":"ground","name":"Hall","role":"circulation"},"kitchen":{"area_m2":[10,20],"fit_mm":[2800,3000],"floor":"ground","name":"Kitchen","role":"family"},"landing":{"area_m2":[5,13],"fit_mm":[1600,1800],"floor":"upper","name":"Landing","role":"circulation"},"living":{"area_m2":[18,34],"fit_mm":[3000,3600],"floor":"ground","name":"Living","role":"family"},"primary":{"area_m2":[18,34],"fit_mm":[3200,3600],"floor":"upper","name":"Primary suite","role":"private"},"study":{"area_m2":[10,17],"fit_mm":[2200,3000],"floor":"ground","name":"Study / guest","role":"private"},"upper_hall":{"area_m2":[5,24],"fit_mm":[1300,1800],"floor":"upper","name":"Upper hall","role":"circulation"},"utility":{"area_m2":[4.5,10],"fit_mm":[1800,2100],"floor":"ground","name":"Utility","role":"service"},"wc":{"area_m2":[3,6.5],"fit_mm":[1500,1700],"floor":"ground","name":"WC","role":"service"}},"schema":1,"scope":"Schematic source-asset study. Furniture/use fits, shared-wall clearances and aligned stair reservation; no engineering or building-code acceptance.","site":{"front":"south","maximum_height_storeys":2,"plot_mm":[24000,24000]},"stair":{"approach_square_mm":1200,"flight_clear_mm":1200,"going_mm":280,"mid_landing_depth_mm":1250,"reserved_headroom_mm":2200,"rises":18,"shaft_mm":[3100,4000],"type":"u_return"},"units":"mm"},"scheme":"family-wing","stair":{"origin":[4400,2500],"rotation":0}}</metadata>
+    <style>.stair-line{fill:none;stroke:currentColor;stroke-width:20}.stair-void{fill:none;stroke:currentColor;stroke-width:20;stroke-dasharray:80 60}.functional-item{fill:none;stroke:currentColor;stroke-width:18}.zone-boundary{fill:none;stroke:currentColor;stroke-width:12;stroke-dasharray:100 100;opacity:.25}</style>
+  </svg>
+</svg>
