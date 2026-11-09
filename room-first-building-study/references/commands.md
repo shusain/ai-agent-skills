@@ -18,7 +18,14 @@ be outside the skill source directory. Generators reject existing output folders
 choose a new run name rather than overwriting review evidence. The readback
 command may refresh its own receipt/frame files in the existing model run.
 
-## Plans first
+## Reuse the helpers for a new design
+
+Start with [the project workflow](planning.md#author-a-new-building). Put the
+skill's `scripts/` directory on the new project's Python import path and use the
+relevant functions from `building_study`. The commands below exercise the
+bundled examples and their file contracts.
+
+## Generate the worked-example plans
 
 ```powershell
 & $studyPython "$studySkill/scripts/test_plans.py"
@@ -26,8 +33,8 @@ command may refresh its own receipt/frame files in the existing model run.
 & $studyPython "$studySkill/scripts/plan.py" validate "$studyRun/plans/family-wing.svg"
 ```
 
-Optional `--program PATH` supplies a room brief. It must fit the supported recipe
-contract or fail. Generation writes six floor SVGs, three paired house SVGs,
+Optional `--program PATH` supplies a brief that follows the bundled two-storey
+house program. Generation writes six floor SVGs, three paired house SVGs,
 models/program data and validation receipts. The bundled paired SVG can be used
 directly for exact reproduction after the user has already selected family-wing.
 For other floor/readback contracts, use `validate --kind floor` or `fallback`.
@@ -42,7 +49,7 @@ room program automatically. The lower-level library APIs can be imported through
 `building_study` with `scripts` on Python's path; do not copy individual modules
 into the current working directory to satisfy imports.
 
-## Native Blender study
+## Build and verify the family-wing example
 
 Establish the user's framing preference first; inspect either profile without
 Blender when useful:
@@ -52,12 +59,11 @@ Blender when useful:
 & $studyPython "$studySkill/scripts/plan.py" framing --system metric --stud-spacing 400
 ```
 
-Only the reviewed family-wing source currently has a complete3D recipe. Adapt
-`building_study/family_wing.py` together with its input identity for another plan;
-replacing the SVG alone will be rejected.
+The example builder requires the exact reviewed family-wing source. For a new
+layout, [author a matching recipe](blender.md#author-a-project-recipe).
 
 ```powershell
-& $blenderExe --background --factory-startup --disable-autoexec --python-exit-code 1 --& $studyPython "$studySkill/scripts/build_blender.py" -- --framing-system us --output "$studyRun/model" --render
+& $blenderExe --background --factory-startup --disable-autoexec --python-exit-code 1 --python "$studySkill/scripts/build_blender.py" -- --framing-system us --output "$studyRun/model" --render
 ```
 
 `--framing-system` is required (`us` or `metric`); it changes physical geometry,
@@ -74,20 +80,20 @@ The builder refuses an interactive Blender process. Open the saved file for
 review without closing or replacing another user's active scene.
 
 ```powershell
-& $blenderExe --background --factory-startup --disable-autoexec "$studyRun/model/FamilyWing-ConstructionStudy.blend" --python-exit-code 1 --& $studyPython "$studySkill/scripts/verify_blender.py" -- --output "$studyRun/model" --render-stages
+& $blenderExe --background --factory-startup --disable-autoexec "$studyRun/model/FamilyWing-ConstructionStudy.blend" --python-exit-code 1 --python "$studySkill/scripts/verify_blender.py" -- --output "$studyRun/model" --render-stages
 python "$studySkill/scripts/compose_review.py" --run "$studyRun/model" --output "$studyRun/review"
 ```
 
 Readback does not resave the native file. It writes `native-readback.json` and,
-with `--render-stages`,20 source-stage PNGs. Omitting that flag runs checks only;
-previous frame evidence is preserved. Run the composer with an interpreter that has Pillow 10.1+. It needs all stage PNGs and
-produces a GIF; it also pairs floor renders when present. `--font PATH` is optional
-and otherwise uses Pillow's portable font instead of a Windows-only dependency.
+with `--render-stages`, 20 source-stage PNGs. Omit that flag to run checks and
+retain earlier frames. Use a Python interpreter with Pillow 10.1+ for the
+composer. It reads all stage PNGs and pairs floor renders when present. Use
+`--font PATH` to override Pillow's portable default font.
 
-## Optional takeoff and explicit price snapshot
+## Example takeoff and historical price snapshot
 
 ```powershell
-& $blenderExe --background --factory-startup --disable-autoexec "$studyRun/model/FamilyWing-ConstructionStudy.blend" --python-exit-code 1 --& $studyPython "$studySkill/scripts/takeoff_blender.py" -- --output "$studyRun/takeoff"
+& $blenderExe --background --factory-startup --disable-autoexec "$studyRun/model/FamilyWing-ConstructionStudy.blend" --python-exit-code 1 --python "$studySkill/scripts/takeoff_blender.py" -- --output "$studyRun/takeoff"
 & $studyPython "$studySkill/scripts/price_takeoff.py" --quantities "$studyRun/takeoff/quantities.json" --rates "$studySkill/assets/examples/usd-rates-2026-11-02.json" --output "$studyRun/example-budget"
 ```
 

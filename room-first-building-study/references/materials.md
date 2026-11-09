@@ -1,9 +1,13 @@
 # Material quantities and optional budgets
 
-Inventory the original `01 | Construction timeline` scene through component
-metadata. Presentation scenes repeat the same building. Preserve the native-file
-hash with quantities; takeoff never resaves geometry. Adapt category mappings
-when a new recipe changes the current part/material naming contract.
+For each project, inventory the original construction components by stable ID,
+stage, material and assembly. Define which geometry to count and the appropriate
+measurement basis for each category, such as area, volume, length or count.
+Track the source/model hashes with the quantities and exclude presentation
+copies. Use a project-specific reader and category mapping.
+
+The example takeoff reads the family-wing SVG and the original
+`01 | Construction timeline` scene. It leaves the native model file intact.
 
 `takeoff_blender.py` writes all-part CSV and grouped JSON. It measures positive
 mesh volume in metres with unit scale; arbitrary open shells need another method.

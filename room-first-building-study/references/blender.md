@@ -9,14 +9,31 @@ do not silently install another version/add-on or assume future APIs match.
 
 `family_wing.py` is a reproducible worked recipe gated to the reviewed source
 hash. Its roof, transfer beams and fixtures are tied to that house; the other two
-SVG schemes have no matching3D recipes. For another layout, adapt or author a
-recipe with the shared helpers and validate the result. Bypassing the identity
-gate does not adapt coordinate-dependent assemblies.
+SVG schemes have no matching3D recipes. For a new design, use the reviewed project geometry and author a matching recipe.
+
+## Author a project recipe
+
+Keep the project script and outputs outside the skill. Import helpers through
+`building_study` with the skill's `scripts/` directory on Python's import path.
+Read the actual semantic source and save its SHA-256 with the model.
+
+Use `blender_parts` for rectangle bands, boxes, beams and prisms. Instantiate
+`Builder(scene, stages=(...), component_prefix="...")` with a project-specific
+ordered tuple of collection names and an ID prefix. Pass a one-based stage
+index to the geometry methods. Stage 0 is reserved for reference objects.
+
+Choose assemblies for the building's system and level count. Specify materials,
+sections, supports, openings, service space and fit-out in the recipe. Timber
+studies can reuse the supplied framing profiles. Steel, masonry and other
+systems need their own assembly rules. Verify the saved file against the
+project's geometry and component inventory. The bundled readback and takeoff
+scripts implement the family-wing contract, so provide project-specific
+verification and takeoff where needed.
 
 ## Assembly construction
 
-Use the selected [framing profile](framing.md) for actual sections, grids and
-display units. The same reviewed plan can use either profile without scaling its
+For timber assemblies, use the selected [framing profile](framing.md) for actual
+sections, grids and display units. The same reviewed plan can use either profile without scaling its
 footprint. Plate/bearing datums and cavity fit follow the selected stock.
 
 Derive exterior layers as bands between footprint insets. This closes convex and
@@ -57,12 +74,13 @@ door pads and full swings.
 ## Ownership, sequence and evidence
 
 Source objects carry `component_id`, `part`, `stage`, `level`, `host`, `assembly`.
-The same objects reveal through20 stages using constant visibility keys. This is
+In the family-wing example, the same objects reveal through 20 stages using
+constant visibility keys. This is
 an assembly reveal, not cranes/workers/moving-member animation. Collections also
 support manual review. Structural views share objects; cutaways/exploded walls
 use presentation copies retaining source identity.
 
-Seven scenes: timeline, structural house, two furnished floor cutaways, exploded
+The example has seven scenes: timeline, structural house, two furnished floor cutaways, exploded
 wall, stairs, T junction. Complete review frame221; stages start1,11,...191 with
 complete marker201. Render native geometry for evidence. Pillow can caption those
 renders without replacing them with generated illustrations.

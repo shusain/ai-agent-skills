@@ -2,10 +2,10 @@
 
 ## Room-first decisions
 
-Carry the user's US/imperial or metric construction preference into the brief;
-see [framing.md](framing.md). Room-plan coordinates and framing stock units are
-separate choices. Do not treat internal millimetres as permission to use metric
-studs or600mm spacing for every new building type.
+Record the intended use, level count, site constraints and construction
+system. For timber projects, carry the user's US/imperial or metric preference
+into the brief and use [framing.md](framing.md) for actual stock dimensions.
+Room-plan coordinates and the construction standard are separate choices.
 
 Establish room purpose, floor, useful clear-area range and a rectangular use/fit
 template before positioning. Specify adjacency, door/open connections, private
@@ -14,6 +14,33 @@ and wet/service relationships. Derive the exterior union after room placement.
 Foyer, halls and landings are designed spaces rather than leftover gaps. Open
 living/kitchen/dining use zones may share one enclosure without walls on virtual
 boundaries.
+
+## Author a new building
+
+1. Define a project program with stable space and level IDs, functional fit
+   templates and relationships. For example, a workshop might need a delivery
+   route between receiving and parts storage, and independent staff access to
+   the repair bay. Derive the footprint from the union of the placed spaces.
+2. For axis-aligned plans, use `plan_svg.union_rectangles` for envelope and
+   material domains, and `shared_spaces.boundaries` for shared-edge ownership.
+   Declare wall thickness and opening rules for the project. Use
+   `clearance_geometry` with project dimensions to check fit, walking regions,
+   door pads and swings. Check relationships and routes across levels where
+   applicable.
+3. Export dimensioned, comparable SVGs with semantic source geometry and
+   separate derived graphics. Use a reader that reconstructs and validates the
+   geometry consumed by modeling. For a custom schema, author the reader
+   and validate source/derived consistency before building.
+4. Carry the selected SVG and its source hash into a matching
+   [Blender recipe](blender.md#author-a-project-recipe).
+
+The low-level geometry functions accept project-authored space IDs and
+coordinates. The higher-level single-floor compiler in `shared_spaces` carries
+fallback defaults for wall thickness, room size and door types. Use it only
+where those assumptions fit. For angled or curved walls, supply geometry and
+validation that represent those shapes.
+
+## Included house program
 
 The example brief is `assets/examples/two-storey-program.json`. The three recipes
 in `building_study.room_first_house.schemes` place named modules with anchor
@@ -54,9 +81,9 @@ footprints. Four frozen pre-repair cases in `assets/regressions` reproduce50mm/
 600mm slivers and doorway failures. Its twelve SVG hashes remain regression
 evidence even when room-first design is preferred.
 
-## Semantic SVG contract
+## Worked-example SVG contract
 
-`read_floor/read_house` reconstruct actual named rectangles and revalidate the
+In `room_first_house`, `read_floor/read_house` reconstruct actual named rectangles and revalidate the
 program, envelope, walls, openings and stair data. Paired SVGs contain two semantic
 floor trees; the reader restores child IDs. Important groups: `spaces-source`,
 `footprint-source`, `shared-boundaries`, `opening-source`, `wall-cells`,

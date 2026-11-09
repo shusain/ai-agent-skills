@@ -1,90 +1,84 @@
 ---
 name: room-first-building-study
-description: Design room-first SVG layouts and inspectable staged Blender buildings using US/imperial or metric framing. Use for inside-out architectural asset studies and model-derived material takeoffs; the included two-storey house is a bounded worked example.
+description: Design conceptual buildings from their room programs. Use for dimensioned SVG layout options, editable staged Blender studies, and model-derived material takeoffs across building types. Reuse geometry, clearance and assembly helpers with project-specific recipes.
 ---
 
 # Room-first building study
 
-Start with how rooms work together, then derive the footprint and shared walls.
-Keep one geometric source for SVG review, Blender assemblies and quantities.
-Deliver only the phase requested; plan review does not automatically select
-Blender authoring, engineering, engine integration or publication.
+Start with the spaces and how they work together. Derive the footprint, shared
+walls and openings from that layout. Use this workflow for residential,
+commercial, industrial, civic or other buildings. Select deliverables by the
+requested phase.
 
-## Establish the construction standard
+## Plan a new building
 
-Use either **US/imperial** or **metric** lumber and spacing. Inherit the user's
-choice from the request/context; if it is unknown and affects the design,
-clarify once while developing the room program. Do not silently reuse metric
-45mm stock or600mm spacing for a US building. Read
-[framing.md](references/framing.md) for actual stock dimensions, defaults and
-overrides. A display-unit change alone does not change physical lumber.
+Read [planning.md](references/planning.md). Establish use, level count, named
+spaces, clear dimensions, equipment/furniture, circulation, access, service
+routes, and site constraints from the brief. Author the layout and checks for
+that project. Show comparable SVG options when a layout is still being chosen.
+Continue from an already reviewed option when one exists.
 
-Use `building_study.framing.profile` for every new building recipe, including
-building types beyond the bundled house. US nominal2×4 is modeled at its actual
-1½×3½ inches; metric45×90 is a different stock choice. Record the chosen profile
-with native outputs and quantities. The build CLI requires `--framing-system`.
+Use the reusable rectangle, topology and clearance helpers for rectilinear
+plans. Choose an appropriate geometry representation and checks for other
+shapes. The bundled house recipes are worked examples. Start a new design from
+its own space program and assemblies.
 
-## Choose the current phase
+## Choose the construction system
 
-- **Plan or revise a building:** read [planning.md](references/planning.md).
-  Define named rooms, usable size/fit, access/privacy and adjacency relationships;
-  compose foyer/halls/stairs intentionally. Show useful SVG alternatives before
-  3D when the layout has not already been reviewed.
-- **Build a reviewed plan:** read [blender.md](references/blender.md). Consume the
-  actual semantic SVG and its identity, build layers with shared junctions and
-  openings, and preserve component/stage ownership. Continue from an already
-  selected layout without requesting the same approval again.
-- **Quantities or cost:** read [materials.md](references/materials.md). Inventory
-  original construction objects, separate measured quantities from purchasing
-  allowances, and keep prices as explicit dated inputs.
-- **Reproduce the included house or run checks:** use
-  [commands.md](references/commands.md). The library supports exact rectilinear
-  geometry; the three room-first arrangements are authored examples. The Blender
-  recipe supports the reviewed family-wing SVG specifically. Adapt the roof,
-  structure, fixtures and validation together for another design; changing a
-  brief does not automatically solve a new building.
+Carry the project's construction system and unit standard into modeling. For
+timber framing, use [framing.md](references/framing.md) and
+`building_study.framing.profile` for actual US/imperial or metric stock and
+spacing. Inherit a stated preference. If the standard affects the design and
+is still unknown, clarify once while developing the room program. A display
+unit choice alone leaves stock dimensions unchanged.
+
+For other systems, declare the assembly materials, section dimensions and
+spacing/grid inputs that apply. Preserve those inputs with the native model and
+takeoff. Treat these as schematic design inputs. Structural engineering and
+code compliance are separate tasks.
+
+## Model, verify and measure
+
+- **Model a reviewed plan:** use [blender.md](references/blender.md). Author a
+  project-specific Blender recipe for the relevant levels, structure, roof,
+  openings and fit-out. Keep the model editable and stage assemblies with stable
+  component IDs. Coordinate service reservations when detailed meshes are
+  outside scope.
+- **Quantities or cost:** use [materials.md](references/materials.md). Inventory
+  the original construction objects, define categories and measurement methods
+  for the project, separate purchasing allowances and use explicit dated rates.
+- **Reproduce the example:** use [commands.md](references/commands.md). The
+  house CLI has three authored arrangements and one reviewed family-wing Blender
+  recipe. The twelve-layout fallback is a separate stock-plan generator.
 
 ## Preserve these invariants
 
-1. Use one internal coordinate basis and convert once to Blender metres.
-   The current SVG contract uses integer-mm room datums; framing geometry keeps
-   sub-millimetre inch conversions exactly instead of rounding stock/spacing.
-   Derive boundaries and wall material from room unions. Shared walls/openings
-   have single owners; independent wall boxes do not resolve L/T junctions.
-2. Reject stale or unsupported SVG source edits. Read named geometry and hosted
-   openings, not labels or a disconnected JSON description. Record the reviewed
-   source hash with the native output.
-3. Room area alone does not establish usability. Check functional fit, minimum
-   walking-width regions, connected circulation, both-side door pads, full swings
-   and aligned stair openings. Recheck physical fixtures and overhead members
-   after modeling. State which checks are schematic or conservative.
-4. Use the same source components for the completed building and its construction
-   sequence. Presentation cutaways/exploded copies retain provenance but are not
-   additional material consumption.
-5. The retained footprint-first generator is an explicit fallback. Failed room
-   briefs should fail visibly; do not silently substitute a different plan or
-   collapse spaces without checking coverage, identity and access.
+1. Use a shared coordinate basis and convert once to Blender metres. The bundled
+   SVG contracts use integer-mm room datums. Keep exact sub-millimetre framing
+   conversions where needed. Derive the footprint from the room union and assign
+   shared walls and hosted openings a single owner.
+2. Read the semantic geometry and openings from the reviewed source. Keep the
+   source hash with the native model and reject stale or unsupported edits.
+3. Check usable dimensions, functional fit, connected circulation, both-side
+   door pads and full swings. Check aligned vertical openings and headroom when
+   applicable. Verify actual fixture and equipment geometry in the saved model
+   and state which checks are schematic or conservative.
+4. Reuse the same source components for the completed building and construction
+   stages. Exclude presentation copies from material quantities.
+5. Keep unsuccessful layouts visible as failed attempts. Use fallback layouts
+   only when selected and recheck coverage, identity and access after any repair.
 
-## Included implementation
+## Included tools
 
-`scripts/plan.py` exposes room-first examples, the twelve-layout fallback and
-actual SVG readback. `scripts/building_study/` contains shared topology,
-rectangle/clearance code and the bounded Blender recipe. Tests retain the four
-sliver/door regressions and unchanged fallback hashes.
+`scripts/building_study/` includes shared geometry, clearance and Blender
+helpers plus the family-wing implementation. `scripts/plan.py` exposes the
+stock recipes and validates their supported semantic SVG schemas.
+`scripts/build_blender.py`, `verify_blender.py` and `takeoff_blender.py`
+reproduce the example in separate background Blender processes. Write generated
+files outside the skill and keep the active Blender session intact.
 
-`scripts/build_blender.py`, `verify_blender.py` and `takeoff_blender.py` run in
-separate background Blender processes; explicit output paths keep generated
-files outside the skill. Blender 5 and its bundled Python can run the model,
-plan, verification, takeoff, and price tools with no add-ons or separate
-packages. Only the optional `compose_review.py` uses Pillow for a captioned GIF
-and floor pair. See the command reference for exact arguments.
+Blender 5 and its bundled Python can run the core tools. Only the optional
+`compose_review.py` uses Pillow for a captioned GIF and floor pair.
 
-Treat lumber sizes, spacing, supports and roof systems as declared design inputs,
-not automatic code/engineering approval. Both metric and US profiles are working
-geometry choices, with explicit stud/joist/rafter spacing overrides.
-Services can remain coordinated reservations when detailed meshes are outside
-scope. Keep production assets and the user's active Blender session intact.
-
-Carry forward source identity, actual checks, review limits and next decisions in
-delivered evidence. Follow the destination project's workflow for adoption; this
-skill grants no permission to publish, message others or deploy.
+Deliver source identity, actual checks, review limits and the remaining design
+decisions. Follow the destination project's workflow for adoption.

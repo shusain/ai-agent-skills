@@ -52,7 +52,9 @@ def mm(rect): return tuple(v/1000 for v in rect)
 
 class Builder:
     """Stable component IDs, reusable actual-size meshes and staged ownership."""
-    def __init__(self,scene):
+    def __init__(self, scene, *, stages=STAGES, component_prefix="FW"):
+        self.stages = tuple(stages)
+        self.component_prefix = component_prefix
         self.scene=scene; self.serial=0;self.meshes={};self.objects=[];self.cols={}
         self.mats={}
         palette={
@@ -73,17 +75,17 @@ class Builder:
         shader=self.mats['glass'].node_tree.nodes.get('Principled BSDF')
         shader.inputs['Transmission Weight'].default_value=.72;shader.inputs['Roughness'].default_value=.12
         self.mats['steel'].node_tree.nodes.get('Principled BSDF').inputs['Metallic'].default_value=.7
-        for stage in STAGES:
+        for stage in self.stages:
             c=bpy.data.collections.new(stage);scene.collection.children.link(c);self.cols[stage]=c
         self.reference=bpy.data.collections.new('00 References and reserved service zones')
         scene.collection.children.link(self.reference)
 
     def register(self,obj,name,stage,mat,level='site',host='',assembly=''):
         self.serial+=1;obj.name=f'{self.serial:05d} | {name}'
-        col=self.cols[STAGES[stage-1]] if stage else self.reference
+        col=self.cols[self.stages[stage-1]] if stage else self.reference
         col.objects.link(obj)
         if obj.type=='MESH':obj.data.materials.append(self.mats[mat])
-        obj['component_id']=f'FW-{self.serial:05d}';obj['part']=name;obj['stage']=stage
+        obj['component_id']=f'{self.component_prefix}-{self.serial:05d}';obj['part']=name;obj['stage']=stage
         obj['level']=level;obj['host']=host;obj['assembly']=assembly or name.split('/')[0]
         self.objects.append(obj);return obj
 
@@ -104,8 +106,8 @@ class Builder:
         # Only assign a material once on a linked mesh.
         if len(mesh.materials):
             self.serial+=1;obj.name=f'{self.serial:05d} | {name}'
-            (self.cols[STAGES[stage-1]] if stage else self.reference).objects.link(obj)
-            for k,v in dict(component_id=f'FW-{self.serial:05d}',part=name,stage=stage,level=level,host=host,assembly=assembly or name.split('/')[0]).items():obj[k]=v
+            (self.cols[self.stages[stage-1]] if stage else self.reference).objects.link(obj)
+            for k,v in dict(component_id=f'{self.component_prefix}-{self.serial:05d}',part=name,stage=stage,level=level,host=host,assembly=assembly or name.split('/')[0]).items():obj[k]=v
             self.objects.append(obj);return obj
         return self.register(obj,name,stage,mat,level,host,assembly)
 

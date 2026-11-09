@@ -65,7 +65,7 @@ grids, joist/rim/header dimensions, bearings, plate datums and service-cavity fi
 it does not scale the building or claim an all-US material catalog. Custom cut
 lengths still need stock-length/cut optimization for purchasing.
 
-New recipes should consume this profile for members and grids rather than copy
+New timber recipes should consume this profile for members and grids rather than copy
 metric constants from an example. Store `framing_profile_json` on the source
 scene. All review scenes should use matching display units. Receipts/takeoffs
 carry actual stock dimensions and selected spacings. Fresh native checks measure
