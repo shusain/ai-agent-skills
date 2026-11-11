@@ -1,5 +1,24 @@
 # AI Agent Skills
 
+## Gitea with tea
+
+[Skill instructions](gitea-tea/SKILL.md) for the installed Gitea CLI, saved login,
+issue and PR workflows, full comment reads, Markdown body files, and
+authenticated API fallback. Invoke with `$gitea-tea`, or describe a Gitea task.
+On this Windows machine, examples use the installed `gitea.ps1` wrapper around
+tea to select the saved login configuration in each Codex shell invocation.
+The wrapper uses `C:/Users/shaun/.config/tea/config.yml`, shared across regular
+and Microsoft Store PowerShell versions. Its source and a credential-safe
+diagnostic are included under `gitea-tea/scripts/`; credentials stay outside Git.
+
+On Shaun's Windows machine, the source folder is linked into both
+`C:/Users/shaun/.codex/skills/gitea-tea` (desktop installation) and
+`C:/Users/shaun/.agents/skills/gitea-tea` (current user-level Codex discovery).
+Both directory junctions target this repository's `gitea-tea/` folder so edits
+stay shared. Skill discovery follows linked folders; see the
+[official skill documentation](https://learn.chatgpt.com/docs/build-skills).
+If a running session does not pick up the skill, start a new session.
+
 ## Room-first Building Study
 
 Design conceptual buildings from the inside out. Start with how people, equipment
